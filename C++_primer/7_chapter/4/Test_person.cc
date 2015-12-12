@@ -14,17 +14,17 @@ int main()
 	read(cin, data1);
 	print(cout, data1);
 	cout << endl;
-	cout << data1.getname() << endl;
-	cout << data1.getaddress() << endl;
+	cout <<"data1:" << data1.getname() << endl;
+	cout <<"data1:" << data1.getaddress() << endl;
 
         print(cout, data2);
         cout << endl;
-        cout << data2.getname() << endl;
-        cout << data2.getaddress() << endl;
+        cout << "data2:" << data2.getname() << endl;
+        cout << "data2:" << data2.getaddress() << endl;
 
         print(cout, data3);
         cout << endl;
-        cout << data3.getname() << endl;
-        cout << data3.getaddress() << endl;
+        cout << "data3:" << data3.getname() << endl;
+        cout << "data3:" << data3.getaddress() << endl;
 
 }

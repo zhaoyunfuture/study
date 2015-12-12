@@ -58,6 +58,7 @@ bool readData(Sales_data& data) {
 void updataData(Sales_data& data1, Sales_data data2) {
 	data1.units_sold += data2.units_sold;
 	data1.revenue += data2.revenue;
+	cout << "updateData" << endl;
 }
 
 void printData(Sales_data data) {
