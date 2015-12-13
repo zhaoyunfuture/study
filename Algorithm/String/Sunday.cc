@@ -125,11 +125,12 @@ int main() {
 	cout << endl;
 #endif
 
-	result = algorithmBrute(text, patt);
+	//result = algorithmBrute(text, patt);
+	result = algorithmSunday(text, patt);	
 	if(result == true) {
 		cout << "Result:include" << endl;
             #ifdef PERFORMANCE_MONITOR
-                cout << "location is at " << test - text << endl;
+                cout << "location is at " << test - text << "test:" << test << " text:" << text << endl;
             #endif
 	}
 	else {
