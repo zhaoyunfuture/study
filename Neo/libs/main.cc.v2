@@ -1,0 +1,81 @@
+#include <iostream>
+
+#include "neodebug.h"
+#include "neomemmanager.h"
+#include "neoqueue.h"
+#include "neolog.h"
+#include "neothread.h"
+#include "neobaselib.h"
+
+
+using namespace NEOLIB;
+using namespace std;
+
+int main()
+{
+	char str[50] = "\0";
+	char buffer[50] = "\0";
+	int len = SafePrintf(str,15,"safeprintftest");
+	printf(">>>>>>>>>>>>>>>>>>>>>>>>CNEODynamicBuffer>>>>>>>>>>>>>>>>>>>>>>>>\n");
+	CNEOLowDebug *debug = new CNEOLowDebug(".","neolibs");
+	CNEOMemPoolWithLock *mempool = new CNEOMemPoolWithLock(debug);
+
+	CNEODynamicBuffer *dbufer = new CNEODynamicBuffer(mempool);
+	dbufer->SetSize(500);
+	dbufer->m_pMemPool->PrintInfo();
+	dbufer->m_pMemPool->PrintTree();
+	printf("\n");
+	dbufer->InsertSpaceToHead(200);
+/*	dbufer->m_pMemPool->PrintInfo();
+//	dbufer->m_pMemPool->PrintTree();
+	dbufer->AddSpaceToTail(100);
+//	dbufer->m_pMemPool->PrintInfo();
+//	dbufer->m_pMemPool->PrintTree();
+	dbufer->CutHead(100);
+//	dbufer->m_pMemPool->PrintInfo();
+//	dbufer->m_pMemPool->PrintTree();
+	//dbufer->CutHead(700);
+	//dbufer->m_pMemPool->PrintInfo();
+	//dbufer->m_pMemPool->PrintTree();
+	dbufer->SetInt(16);
+//	dbufer->m_pMemPool->PrintInfo();
+//	dbufer->m_pMemPool->PrintTree();
+	printf("%d \n",dbufer->GetInt());
+	dbufer->SetShort(5);
+//	dbufer->m_pMemPool->PrintInfo();
+//	dbufer->m_pMemPool->PrintTree();
+	printf("%d \n",dbufer->GetShort());
+	dbufer->SetChar(25);
+//	dbufer->m_pMemPool->PrintInfo();
+//	dbufer->m_pMemPool->PrintTree();
+	printf("%d \n",dbufer->GetChar());
+*/
+	char a[50] = "1532dsdsdasdsadwqqewaeaw";
+//	dbufer->AddData(a,sizeof(a));
+	dbufer->InsertDataToHead(a,sizeof(a));
+	dbufer->m_pMemPool->PrintInfo();
+	dbufer->m_pMemPool->PrintTree();
+	printf("\n");
+/*	dbufer->InsertDataToHead(a,sizeof(a));
+	dbufer->m_pMemPool->PrintInfo();
+	dbufer->m_pMemPool->PrintTree();
+	printf("\n");
+	dbufer->InsertDataToHead(a,sizeof(a));
+	dbufer->m_pMemPool->PrintInfo();
+	dbufer->m_pMemPool->PrintTree();
+*/	printf("\n");
+	char jj[2] = "j";
+	dbufer->InsertDataToHead(jj,sizeof(jj));
+	dbufer->m_pMemPool->PrintInfo();
+	dbufer->m_pMemPool->PrintTree();
+	printf("\n");
+
+	char b[200] = {""};
+	dbufer->BinCopyTo(b,200);
+	printf("%s\n",b);
+
+//	dbufer->Printf("%s\n",a);
+//	char c[50] = "ewdadwadawa";
+//	printf("%d\n",dbufer->memcmp(c,20));
+//	printf("%d\n",dbufer->strcmp(c));
+}	

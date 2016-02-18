@@ -102,7 +102,8 @@ THREADFUNC(CNEOThreadPool::ThreadPoolCtrlThread,pParam)
     {
        //获得当前的空闲线程数
         nIdleThread=MvarGet(pThis->m_nThreadPoolIdleThreadCount);
-        if(WHILE_THREAD_COUNT>nIdleThread)
+       //while_thread_count = 10
+		if(WHILE_THREAD_COUNT>nIdleThread)
         {
            //如果备用线程不够10，启动新进程，启动前，需要先找到空闲的任务块,否则不启动
             nNotRunThread=pThis->SearchForNotUseToken();
@@ -156,7 +157,9 @@ THREADFUNC(CNEOThreadPool::ThreadPoolThread,pParam)
             MvarSet(pPoint->m_nState,TPOOL_THREAD_STATE_IDLE);
             //注意没有break
         case TPOOL_THREAD_STATE_IDLE:
-        
+//add by jacob
+		default:
+			break;
         case TPOOL_THREAD_STATE_BUSY:
             //没有把IDLe计数器设置为-1，
             //因为Register函数做了这个动作
@@ -169,8 +172,8 @@ THREADFUNC(CNEOThreadPool::ThreadPoolThread,pParam)
 
             }//if
             break;
-        default:
-            break;
+//        default:
+//            break;
         };//switch
         //检查空闲线程总数
         if(WHILE_THREAD_COUNT<MvarGet(pPoint->m_pThreadPoolObjext->m_nThreadPoolIdleThreadCount))
@@ -223,7 +226,7 @@ int CNEOThreadPool::ThreadPoolRegisterANewThread(_TPOOL_CALLBACK pCallback,void 
        //没有找到IDEL线程
         if(THIS_POOLTHREAD_MAX==MvarGet(m_nThreadPoolThreadCount))
         {
-           //没有空闲线程，且线程已经达到上限，返回Overflow
+           //没有空闲线程，且线程已经达到上限，返回Overflow=-1
             nRet=_THREADPOOL_OVERFLOW;
         }
         else
@@ -237,7 +240,9 @@ int CNEOThreadPool::ThreadPoolRegisterANewThread(_TPOOL_CALLBACK pCallback,void 
        //找到空闲线程，添加任务(将回电函数传给线程，让线程执行)
         m_TToken[nIdleThread].m_pCallback=pCallback;
         m_TToken[nIdleThread].m_pCallParam=pParam;
-        MvarSet(m_TToken[nIdleThread].m_nState,
+	//below set busy state will triger the server_thread(threadpoolthread)
+	//to perform the CASE BUSY 
+		MvarSet(m_TToken[nIdleThread].m_nState,
             TPOOL_THREAD_STATE_BUSY);
         MvarDec(m_nThreadPoolIdleThreadCount);
         nRet=_THREADPOOL_OK;
@@ -325,6 +330,21 @@ void printThreadInfo(void *pCallParam,MBOOL &bThreadContinue)
                     );
         }
     }
+
+    //workaround fix warning
+    MBOOL workaround;
+    workaround = bThreadContinue;
+    bThreadContinue = workaround;
+}
+
+void printThreadInfo_jacob(void *pCallParam,MBOOL &bThreadContinue)
+{
+    CNEOThreadPool *pThis=(CNEOThreadPool*)pCallParam;
+    SThreadToken *pPoint=pThis->getTToken();
+
+    printf("jacob====>> m_nThreadPoolThreadCount=%d,m_nThreadPoolIdleThreadCount=%d\r\n",\
+        pThis->getThreadPoolThreadCount(),pThis->getThreadPoolIdleThreadCount()\
+        );
 
     //workaround fix warning
     MBOOL workaround;
@@ -461,7 +481,8 @@ bool CNEOTaskPool::RegisterATaskDolt(STaskPoolToken *pToken,int nLimit)
 /*
     1.用于启动服务线程，30个线程
     2.维护启动线程个数
-    3.启动完成之后，减少线程个数
+    3.启动完成之后，减少线程个数 that is for create 30 server_thread
+	than finished shun down itself.
 */
 void CNEOTaskPool::TaskCtrlThread(void *pCallParam,
         MBOOL &bThreadContinue)
