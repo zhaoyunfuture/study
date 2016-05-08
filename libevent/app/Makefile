@@ -1,6 +1,6 @@
 include ../../Makefile.inc
 
-TARGET = msgrece msgsend msgr msgs msgr_v2 msgs_v2
+TARGET = test thread 
                   
 
 DIRS_TARGET = 
@@ -23,5 +23,5 @@ dir_build_allgen :
 	@ for dir in ${DIRS_TARGET}; do (cd $${dir}; ${MAKE} allgen) ; done
     
 
-% : %.c
-	$(CXX) -o $@ $^ ${CXXFLAGS}
+% : %.cpp
+	$(CXX) -o $@ $^ ${CXXFLAGS} -levent

@@ -1,9 +1,8 @@
 include ../../Makefile.inc
 
-TARGET = msgrece msgsend msgr msgs msgr_v2 msgs_v2
-                  
+TARGET = main 
 
-DIRS_TARGET = 
+DIRS_TARGET =
 
 all:$(TARGET) dir_build obj_clean
 
@@ -21,7 +20,7 @@ dir_build :
 
 dir_build_allgen :
 	@ for dir in ${DIRS_TARGET}; do (cd $${dir}; ${MAKE} allgen) ; done
-    
 
-% : %.c
-	$(CXX) -o $@ $^ ${CXXFLAGS}
+main : main.cpp
+	$(CXX) -o $@ $< ${CXXFLAGS}
+

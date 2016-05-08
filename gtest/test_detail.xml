@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="1" disabled="0" errors="0" time="0" name="AllTests">
+  <testsuite name="FooTest" tests="1" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="HandleNoneZeroInput" status="run" time="0" classname="FooTest" />
+  </testsuite>
+  <testsuite name="addTest" tests="1" failures="1" disabled="0" errors="0" time="0">
+    <testcase name="sumFunc" status="run" time="0" classname="addTest">
+      <failure message="Value of: add(30, 18)&#x0A;  Actual: 48&#x0A;Expected: 6" type=""><![CDATA[demo.cpp:26
+Value of: add(30, 18)
+  Actual: 48
+Expected: 6]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
