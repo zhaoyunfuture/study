@@ -1,0 +1,24 @@
+#ifndef __${CLASSNAME}_H__
+#define __${CLASSNAME}_H__
+
+#include <map>
+
+class C${Class_Name}
+{
+public:
+    C${Class_Name}() {}
+    ~C${Class_Name}() {}
+
+public:
+    struct ${En_name}_struct 
+    {
+    public:
+        ${En_name}_struct() : m_${Name}(0) {}
+        ${Type} m_${Name};
+    };
+
+private:
+    std::map<${Type}, ${En_name}_struct> m_${En_name}_cfg;
+};
+
+#endif
