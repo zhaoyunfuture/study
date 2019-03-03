@@ -5,9 +5,8 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-  printf("hello");
   
-  return 0;
+	return 0;
 }
 
 
