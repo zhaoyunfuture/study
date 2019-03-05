@@ -13,18 +13,42 @@ public:
                 digits.push_back(1);
                 return digits;
             }
-            bool flag = false;
+
             for(int i = size; i > 0 ;--i)
             {
-                if(digits.at(i-1) < 9) 
+                if(digits.at(i-1) < 9)
+                {
+                    digits.at(i-1) += 1;
+                    break;
+                }
+                else
+                {
+                    digits.at(i-1) = 0;
+                    if(i == 1)
+                    {
+                        digits.insert(digits.begin(),1);
+                    }
+                }
             }
-
+            return digits;
         }
 };
 
 int main(int argc, char* argv[])
 {
-  
+    Solution s;
+    vector<int> v;
+    vector<int> u;
+    std::vector<int>::iterator it;
+
+    v.push_back(9);
+    v.push_back(9);
+    v.push_back(9);
+    u = s.plusOne(v);
+    for(it = u.begin();it != u.end();++it)
+    {
+        cout << *it << endl;
+    }
 	return 0;
 }
 
