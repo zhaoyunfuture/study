@@ -1,1 +1,7 @@
 max_subarray is not fast
+
+add_binary:
+Runtime: 16 ms, faster than 5.77% of C++ online submissions for Add Binary.
+Memory Usage: 10.6 MB, less than 5.57% of C++ online submissions for Add Binary.
+
+
