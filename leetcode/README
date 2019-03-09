@@ -10,3 +10,8 @@ Status: Time Limit Exceeded
 Submitted: 0 minutes ago
 Last executed input:26
 
+rm_dup_from_sort_list:
+Runtime: 12 ms, faster than 100.00% of C++ online submissions for Remove Duplicates from Sorted List.
+Memory Usage: 9.3 MB, less than 21.04% of C++ online submissions for Remove Duplicates from Sorted List.
+
+
