@@ -17,3 +17,9 @@ Memory Usage: 9.3 MB, less than 21.04% of C++ online submissions for Remove Dupl
 merge_sort_array:
 Runtime: 8 ms, faster than 92.35% of C++ online submissions for Merge Sorted Array.
 Memory Usage: 9 MB, less than 79.56% of C++ online submissions for Merge Sorted Array.
+
+same tree:
+Runtime: 4 ms, faster than 100.00% of C++ online submissions for Same Tree.
+Memory Usage: 10.1 MB, less than 78.39% of C++ online submissions for Same Tree.
+
+
