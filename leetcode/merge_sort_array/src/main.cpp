@@ -9,38 +9,38 @@ public:
 	void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
 		std::vector<int>::iterator it1;
 		std::vector<int>::iterator it2;
-		bool flag = false;
-		if(m == 0)
-		{
-			nums1.erase(nums1.begin(),nums1.begin()+nums1.size());
-			for(it2 = nums2.begin();it2 != nums2.end(); ++it2)
-			{
-				nums1.push_back(*it2);
-			}
-			return;
-		}
+        bool flag = false;
+        if(m == 0)
+        {
+            nums1.erase(nums1.begin(),nums1.begin()+nums1.size());
+            for(it2 = nums2.begin();it2 != nums2.end(); ++it2)
+            {
+                nums1.push_back(*it2);
+            }
+            return;
+        }
         else
         {
             nums1.erase(nums1.begin()+m,nums1.begin()+nums1.size());
         }
-		for(it2 = nums2.begin();it2 != nums2.end(); ++it2)
-		{
-		    flag = false;
-			it1 = nums1.begin();
-			while(*it2 > *it1)
-			{
-				if(it1 == nums1.end())
-				{
-					flag = true;
-					break;
-				}
-				it1++;
-			}
-			if(flag)
-		    	nums1.push_back(*it2);
+        for(it2 = nums2.begin();it2 != nums2.end(); ++it2)
+        {
+            flag = false;
+            it1 = nums1.begin();
+            while(*it2 > *it1)
+            {
+                if(it1 == nums1.end())
+                {
+                    flag = true;
+                    break;
+                }
+                it1++;
+            }
+            if(flag)
+                nums1.push_back(*it2);
             else
-			    nums1.insert(it1,*it2);
-		}
+                nums1.insert(it1,*it2);
+        }
 	}
 };
 
