@@ -9,7 +9,6 @@ public:
 	void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
 		std::vector<int>::iterator it1;
 		std::vector<int>::iterator it2;
-		int i = 0;
 		bool flag = false;
 		if(m == 0)
 		{
@@ -20,41 +19,27 @@ public:
 			}
 			return;
 		}
+        else
+        {
+            nums1.erase(nums1.begin()+m,nums1.begin()+nums1.size());
+        }
 		for(it2 = nums2.begin();it2 != nums2.end(); ++it2)
 		{
+		    flag = false;
 			it1 = nums1.begin();
-			int j = 0;
 			while(*it2 > *it1)
 			{
-				it1++;
-				j++;
-				if(j == (m+i-1) || m==1)
+				if(it1 == nums1.end())
 				{
 					flag = true;
 					break;
 				}
+				it1++;
 			}
 			if(flag)
-			{
-				if(m ==1)
-				{
-					nums1.pop_back();
-					break;
-				}
-				int k = m+n-j-1;
-				for(;k>0;k--)
-				{
-					nums1.pop_back();
-				}
-				break;
-			}
-			nums1.insert(it1,*it2);
-			nums1.pop_back();
-			i++;
-		}
-		for(;it2 != nums2.end(); ++it2)
-		{
-			nums1.push_back(*it2);
+		    	nums1.push_back(*it2);
+            else
+			    nums1.insert(it1,*it2);
 		}
 	}
 };
