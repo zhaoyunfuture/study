@@ -22,4 +22,8 @@ same tree:
 Runtime: 4 ms, faster than 100.00% of C++ online submissions for Same Tree.
 Memory Usage: 10.1 MB, less than 78.39% of C++ online submissions for Same Tree.
 
+symmetric tree:
+Runtime: 12 ms, faster than 97.29% of C++ online submissions for Symmetric Tree.
+Memory Usage: 15.9 MB, less than 51.26% of C++ online submissions for Symmetric Tree.
+
 
