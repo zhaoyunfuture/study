@@ -26,4 +26,7 @@ symmetric tree:
 Runtime: 12 ms, faster than 97.29% of C++ online submissions for Symmetric Tree.
 Memory Usage: 15.9 MB, less than 51.26% of C++ online submissions for Symmetric Tree.
 
+max_depth_tree:
+Runtime: 16 ms, faster than 99.17% of C++ online submissions for Maximum Depth of Binary Tree.
+Memory Usage: 19.2 MB, less than 84.29% of C++ online submissions for Maximum Depth of Binary Tree.
 
