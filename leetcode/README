@@ -37,3 +37,7 @@ Memory Usage: 14.5 MB, less than 32.42% of C++ online submissions for Binary Tre
 balanced_binary_tree:
 Runtime: 16 ms, faster than 99.70% of C++ online submissions for Balanced Binary Tree.
 Memory Usage: 16.6 MB, less than 96.54% of C++ online submissions for Balanced Binary Tree.
+
+min_depth_tree:
+Runtime: 16 ms, faster than 99.44% of C++ online submissions for Minimum Depth of Binary Tree.
+Memory Usage: 19.6 MB, less than 80.00% of C++ online submissions for Minimum Depth of Binary Tree.
