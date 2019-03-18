@@ -41,3 +41,9 @@ Memory Usage: 16.6 MB, less than 96.54% of C++ online submissions for Balanced B
 min_depth_tree:
 Runtime: 16 ms, faster than 99.44% of C++ online submissions for Minimum Depth of Binary Tree.
 Memory Usage: 19.6 MB, less than 80.00% of C++ online submissions for Minimum Depth of Binary Tree.
+
+path_sum:
+Runtime: 16 ms, faster than 99.92% of C++ online submissions for Path Sum.
+Memory Usage: 19.7 MB, less than 90.91% of C++ online submissions for Path Sum.
+
+
