@@ -46,4 +46,8 @@ path_sum:
 Runtime: 16 ms, faster than 99.92% of C++ online submissions for Path Sum.
 Memory Usage: 19.7 MB, less than 90.91% of C++ online submissions for Path Sum.
 
+pascal_triangle:
+Runtime: 4 ms, faster than 100.00% of C++ online submissions for Pascal's Triangle.
+Memory Usage: 8.8 MB, less than 52.17% of C++ online submissions for Pascal's Triangle.
+
 
