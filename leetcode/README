@@ -65,3 +65,7 @@ Memory Usage: 9.5 MB, less than 52.45% of C++ online submissions for Best Time t
 valid_palindrome:
 Runtime: 488 ms, faster than 5.04% of C++ online submissions for Valid Palindrome.
 Memory Usage: 9.2 MB, less than 41.53% of C++ online submissions for Valid Palindrome.
+
+single_number:
+Runtime: 584 ms, faster than 5.15% of C++ online submissions for Single Number.
+Memory Usage: 9.6 MB, less than 81.87% of C++ online submissions for Single Number.
