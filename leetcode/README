@@ -74,4 +74,6 @@ linked_list_cycle:
 Runtime: 12 ms, faster than 99.54% of C++ online submissions for Linked List Cycle.
 Memory Usage: 9.6 MB, less than 96.41% of C++ online submissions for Linked List Cycle.
 
-
+min_stack:
+Runtime: 320 ms, faster than 5.37% of C++ online submissions for Min Stack.
+Memory Usage: 16.9 MB, less than 66.67% of C++ online submissions for Min Stack.
