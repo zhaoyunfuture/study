@@ -86,3 +86,6 @@ add_two_sum_II:
 Runtime: 220 ms, faster than 10.20% of C++ online submissions for Two Sum II - Input array is sorted.
 Memory Usage: 9.3 MB, less than 99.52% of C++ online submissions for Two Sum II - Input array is sorted.
 
+excel_sheet_column_title:
+Runtime: 8 ms, faster than 100.00% of C++ online submissions for Excel Sheet Column Title.
+Memory Usage: 8 MB, less than 77.57% of C++ online submissions for Excel Sheet Column Title.
