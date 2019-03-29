@@ -81,3 +81,8 @@ Memory Usage: 16.9 MB, less than 66.67% of C++ online submissions for Min Stack.
 intersection_of_two_linked_lists:
 Runtime: 68 ms, faster than 22.17% of C++ online submissions for Intersection of Two Linked Lists.
 Memory Usage: 19.1 MB, less than 14.04% of C++ online submissions for Intersection of Two Linked Lists.
+
+majority_element:
+Runtime: 20 ms, faster than 98.97% of C++ online submissions for Majority Element.
+Memory Usage: 11.1 MB, less than 92.48% of C++ online submissions for Majority Element.
+
