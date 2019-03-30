@@ -101,3 +101,7 @@ Memory Usage: 8.1 MB, less than 65.99% of C++ online submissions for Excel Sheet
 factorial_trailing_zeroes:
 500 / 502 test cases passed.
 Status: Time Limit Exceeded
+
+rotate_array:
+Runtime: 268 ms, faster than 22.28% of C++ online submissions for Rotate Array.
+Memory Usage: 9.7 MB, less than 17.05% of C++ online submissions for Rotate Array
