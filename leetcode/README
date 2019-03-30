@@ -97,3 +97,7 @@ Memory Usage: 11.1 MB, less than 92.48% of C++ online submissions for Majority E
 excel_sheet_column_num:
 Runtime: 4 ms, faster than 100.00% of C++ online submissions for Excel Sheet Column Number.
 Memory Usage: 8.1 MB, less than 65.99% of C++ online submissions for Excel Sheet Column Number.
+
+factorial_trailing_zeroes:
+500 / 502 test cases passed.
+Status: Time Limit Exceeded
