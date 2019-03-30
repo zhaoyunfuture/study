@@ -94,4 +94,6 @@ majority_element:
 Runtime: 20 ms, faster than 98.97% of C++ online submissions for Majority Element.
 Memory Usage: 11.1 MB, less than 92.48% of C++ online submissions for Majority Element.
 
-
+excel_sheet_column_num:
+Runtime: 4 ms, faster than 100.00% of C++ online submissions for Excel Sheet Column Number.
+Memory Usage: 8.1 MB, less than 65.99% of C++ online submissions for Excel Sheet Column Number.
