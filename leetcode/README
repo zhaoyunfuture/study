@@ -116,3 +116,7 @@ Memory Usage: 8.2 MB, less than 36.97% of C++ online submissions for Number of 1
 
 house_robber:
 Time Limit Exceeded
+
+remove_linked_list_elements:
+Runtime: 28 ms, faster than 99.75% of C++ online submissions for Remove Linked List Elements.
+Memory Usage: 10.8 MB, less than 100.00% of C++ online submissions for Remove Linked List Elements.
