@@ -113,3 +113,6 @@ Memory Usage: 7.8 MB, less than 97.32% of C++ online submissions for Reverse Bit
 numbers of 1 bits:
 Runtime: 12 ms, faster than 44.08% of C++ online submissions for Number of 1 Bits.
 Memory Usage: 8.2 MB, less than 36.97% of C++ online submissions for Number of 1 Bits.
+
+house_robber:
+Time Limit Exceeded
