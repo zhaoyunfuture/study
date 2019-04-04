@@ -127,3 +127,7 @@ Time Limit Exceeded
 isIsomorphic_string:
 Runtime: 16 ms, faster than 36.36% of C++ online submissions for Isomorphic Strings.
 Memory Usage: 10.7 MB, less than 5.26% of C++ online submissions for Isomorphic Strings.
+
+reverse_linked_list:
+Runtime: 8 ms, faster than 100.00% of C++ online submissions for Reverse Linked List.
+Memory Usage: 9 MB, less than 92.33% of C++ online submissions for Reverse Linked List.
