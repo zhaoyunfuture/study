@@ -135,3 +135,7 @@ Memory Usage: 9 MB, less than 92.33% of C++ online submissions for Reverse Linke
 contains_duplicate:
 Runtime: 60 ms, faster than 23.98% of C++ online submissions for Contains Duplicate.
 Memory Usage: 16.6 MB, less than 25.88% of C++ online submissions for Contains Duplicate.
+
+contains_duplicate_II:
+Runtime: 84 ms, faster than 10.99% of C++ online submissions for Contains Duplicate II.
+Memory Usage: 24.6 MB, less than 5.20% of C++ online submissions for Contains Duplicate II.
