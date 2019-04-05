@@ -156,4 +156,5 @@ Runtime: 28 ms, faster than 49.28% of C++ online submissions for Palindrome Link
 Memory Usage: 13.3 MB, less than 27.34% of C++ online submissions for Palindrome Linked List.
 
 lowest_common_ancestor_BST:
-TBD
+Runtime: 68 ms, faster than 13.09% of C++ online submissions for Lowest Common Ancestor of a Binary Search Tree.
+Memory Usage: 25.9 MB, less than 33.46% of C++ online submissions for Lowest Common Ancestor of a Binary Search Tree.
