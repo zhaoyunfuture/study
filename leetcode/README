@@ -150,3 +150,7 @@ Memory Usage: 9.2 MB, less than 40.49% of C++ online submissions for Invert Bina
 power_of_two:
 Runtime: 12 ms, faster than 43.92% of C++ online submissions for Power of Two.
 Memory Usage: 7.9 MB, less than 98.72% of C++ online submissions for Power of Two.
+
+palindrome_linked_list:
+Runtime: 28 ms, faster than 49.28% of C++ online submissions for Palindrome Linked List.
+Memory Usage: 13.3 MB, less than 27.34% of C++ online submissions for Palindrome Linked List.
