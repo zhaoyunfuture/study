@@ -178,3 +178,7 @@ Memory Usage: 8.5 MB, less than 7.44% of C++ online submissions for Add Digits.
 ugly_number:
 Runtime: 4 ms, faster than 100.00% of C++ online submissions for Ugly Number.
 Memory Usage: 8 MB, less than 60.68% of C++ online submissions for Ugly Number.
+
+missing number:
+Runtime: 24 ms, faster than 98.14% of C++ online submissions for Missing Number.
+Memory Usage: 9.6 MB, less than 97.81% of C++ online submissions for Missing Number.
