@@ -162,3 +162,7 @@ Memory Usage: 25.9 MB, less than 33.46% of C++ online submissions for Lowest Com
 delete_node_in_linked_list:
 Runtime: 12 ms, faster than 100.00% of C++ online submissions for Delete Node in a Linked List.
 Memory Usage: 9.2 MB, less than 31.52% of C++ online submissions for Delete Node in a Linked List.
+
+valid anagram:
+Runtime: 20 ms, faster than 45.39% of C++ online submissions for Valid Anagram.
+Memory Usage: 9.6 MB, less than 5.16% of C++ online submissions for Valid Anagram.
