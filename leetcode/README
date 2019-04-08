@@ -170,3 +170,7 @@ Memory Usage: 9.6 MB, less than 5.16% of C++ online submissions for Valid Anagra
 binary_tree_paths:
 Runtime: 8 ms, faster than 94.81% of C++ online submissions for Binary Tree Paths.
 Memory Usage: 12.2 MB, less than 86.63% of C++ online submissions for Binary Tree Paths.
+
+add_digits:
+Runtime: 8 ms, faster than 43.04% of C++ online submissions for Add Digits.
+Memory Usage: 8.5 MB, less than 7.44% of C++ online submissions for Add Digits.
