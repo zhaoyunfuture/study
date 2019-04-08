@@ -186,3 +186,7 @@ Memory Usage: 9.6 MB, less than 97.81% of C++ online submissions for Missing Num
 first_bad_version:
 Runtime: 4 ms, faster than 100.00% of C++ online submissions for First Bad Version.
 Memory Usage: 8.2 MB, less than 38.58% of C++ online submissions for First Bad Version.
+
+move_zeroes:
+Runtime: 20 ms, faster than 36.47% of C++ online submissions for Move Zeroes.
+Memory Usage: 9.4 MB, less than 99.61% of C++ online submissions for Move Zeroes.
