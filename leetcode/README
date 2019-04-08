@@ -182,3 +182,7 @@ Memory Usage: 8 MB, less than 60.68% of C++ online submissions for Ugly Number.
 missing number:
 Runtime: 24 ms, faster than 98.14% of C++ online submissions for Missing Number.
 Memory Usage: 9.6 MB, less than 97.81% of C++ online submissions for Missing Number.
+
+first_bad_version:
+Runtime: 4 ms, faster than 100.00% of C++ online submissions for First Bad Version.
+Memory Usage: 8.2 MB, less than 38.58% of C++ online submissions for First Bad Version.
