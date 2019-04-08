@@ -166,3 +166,7 @@ Memory Usage: 9.2 MB, less than 31.52% of C++ online submissions for Delete Node
 valid anagram:
 Runtime: 20 ms, faster than 45.39% of C++ online submissions for Valid Anagram.
 Memory Usage: 9.6 MB, less than 5.16% of C++ online submissions for Valid Anagram.
+
+binary_tree_paths:
+Runtime: 8 ms, faster than 94.81% of C++ online submissions for Binary Tree Paths.
+Memory Usage: 12.2 MB, less than 86.63% of C++ online submissions for Binary Tree Paths.
