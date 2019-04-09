@@ -222,3 +222,7 @@ Memory Usage: 317.4 MB, less than 5.34% of C++ online submissions for Reverse Vo
 intersection_of_two_arrays:
 Runtime: 12 ms, faster than 51.37% of C++ online submissions for Intersection of Two Arrays.
 Memory Usage: 9.6 MB, less than 21.37% of C++ online submissions for Intersection of Two Arrays.
+
+intersection_of_two_arrays:
+Runtime: 68 ms, faster than 15.32% of C++ online submissions for Intersection of Two Arrays II.
+Memory Usage: 10.9 MB, less than 5.10% of C++ online submissions for Intersection of Two Arrays II.
