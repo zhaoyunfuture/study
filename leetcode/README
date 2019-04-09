@@ -194,3 +194,7 @@ Memory Usage: 9.4 MB, less than 99.61% of C++ online submissions for Move Zeroes
 word_pattern:
 Runtime: 4 ms, faster than 100.00% of C++ online submissions for Word Pattern.
 Memory Usage: 9.5 MB, less than 5.56% of C++ online submissions for Word Pattern.
+
+nim_game:
+Runtime: 4 ms, faster than 100.00% of C++ online submissions for Nim Game.
+Memory Usage: 8 MB, less than 84.31% of C++ online submissions for Nim Game.
