@@ -206,3 +206,7 @@ Memory Usage: 17.2 MB, less than 56.79% of C++ online submissions for Range Sum 
 power_of_three:
 Runtime: 52 ms, faster than 96.94% of C++ online submissions for Power of Three.
 Memory Usage: 8 MB, less than 68.42% of C++ online submissions for Power of Three.
+
+power_of_four:
+Runtime: 4 ms, faster than 100.00% of C++ online submissions for Power of Four.
+Memory Usage: 8 MB, less than 67.61% of C++ online submissions for Power of Four.
