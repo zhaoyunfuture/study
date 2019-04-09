@@ -210,3 +210,7 @@ Memory Usage: 8 MB, less than 68.42% of C++ online submissions for Power of Thre
 power_of_four:
 Runtime: 4 ms, faster than 100.00% of C++ online submissions for Power of Four.
 Memory Usage: 8 MB, less than 67.61% of C++ online submissions for Power of Four.
+
+reverse_string:
+Runtime: 60 ms, faster than 47.16% of C++ online submissions for Reverse String.
+Memory Usage: 15.1 MB, less than 99.59% of C++ online submissions for Reverse String.
