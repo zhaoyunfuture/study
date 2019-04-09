@@ -214,3 +214,7 @@ Memory Usage: 8 MB, less than 67.61% of C++ online submissions for Power of Four
 reverse_string:
 Runtime: 60 ms, faster than 47.16% of C++ online submissions for Reverse String.
 Memory Usage: 15.1 MB, less than 99.59% of C++ online submissions for Reverse String.
+
+reverse_vowels_of_string:
+Runtime: 588 ms, faster than 5.33% of C++ online submissions for Reverse Vowels of a String.
+Memory Usage: 317.4 MB, less than 5.34% of C++ online submissions for Reverse Vowels of a String.
