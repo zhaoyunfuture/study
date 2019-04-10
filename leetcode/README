@@ -226,3 +226,7 @@ Memory Usage: 9.6 MB, less than 21.37% of C++ online submissions for Intersectio
 intersection_of_two_arrays:
 Runtime: 68 ms, faster than 15.32% of C++ online submissions for Intersection of Two Arrays II.
 Memory Usage: 10.9 MB, less than 5.10% of C++ online submissions for Intersection of Two Arrays II.
+
+valid_perfect_square:
+Runtime: 4 ms, faster than 100.00% of C++ online submissions for Valid Perfect Square.
+Memory Usage: 7.9 MB, less than 96.93% of C++ online submissions for Valid Perfect Square.
