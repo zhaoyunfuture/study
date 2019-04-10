@@ -78,9 +78,8 @@ int main(int argc, char* argv[])
 	cout << s.reverse(1463847412) << endl;
 	cout << s.reverse(-1563847412) << endl;
  cout << "INT_MIN" << INT_MIN <<endl;	
+ cout << "INT_MAX" << INT_MAX <<endl;	
+ cout << "UINT_MAX" << UINT_MAX <<endl;	
     return 0;
 }
-
-
-
 
