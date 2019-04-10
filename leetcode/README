@@ -234,3 +234,6 @@ Memory Usage: 7.9 MB, less than 96.93% of C++ online submissions for Valid Perfe
 add_two_int_without_+-:
 good refer: https://leetcode.com/problems/sum-of-two-integers/discuss/84278/A-summary%3A-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently
 
+guess_number_higher_lower:
+Runtime: 4 ms, faster than 100.00% of C++ online submissions for Guess Number Higher or Lower.
+Memory Usage: 8.1 MB, less than 51.49% of C++ online submissions for Guess Number Higher or Lower.
