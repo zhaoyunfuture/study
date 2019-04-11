@@ -248,3 +248,6 @@ Memory Usage: 17 MB, less than 5.03% of C++ online submissions for First Unique 
 find_difference:
 Runtime: 8 ms, faster than 61.74% of C++ online submissions for Find the Difference.
 Memory Usage: 9 MB, less than 97.52% of C++ online submissions for Find the Difference.
+
+Nth_digit:
+good refer:https://leetcode.com/problems/nth-digit/discuss/88369/0ms-C%2B%2B-Solution-with-Detail-Explanation
