@@ -244,3 +244,7 @@ I dont get means ...
 first_unique_char_in_string:
 Runtime: 88 ms, faster than 14.53% of C++ online submissions for First Unique Character in a String.
 Memory Usage: 17 MB, less than 5.03% of C++ online submissions for First Unique Character in a String.
+
+find_difference:
+Runtime: 8 ms, faster than 61.74% of C++ online submissions for Find the Difference.
+Memory Usage: 9 MB, less than 97.52% of C++ online submissions for Find the Difference.
