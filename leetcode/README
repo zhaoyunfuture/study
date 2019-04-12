@@ -251,3 +251,7 @@ Memory Usage: 9 MB, less than 97.52% of C++ online submissions for Find the Diff
 
 Nth_digit:
 good refer:https://leetcode.com/problems/nth-digit/discuss/88369/0ms-C%2B%2B-Solution-with-Detail-Explanation
+
+binary_watch:
+Runtime: 4 ms, faster than 100.00% of C++ online submissions for Binary Watch.
+Memory Usage: 9 MB, less than 34.61% of C++ online submissions for Binary Watch.
