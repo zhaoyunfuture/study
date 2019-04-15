@@ -255,3 +255,7 @@ good refer:https://leetcode.com/problems/nth-digit/discuss/88369/0ms-C%2B%2B-Sol
 binary_watch:
 Runtime: 4 ms, faster than 100.00% of C++ online submissions for Binary Watch.
 Memory Usage: 9 MB, less than 34.61% of C++ online submissions for Binary Watch.
+
+sum_of_left_leaves:
+Runtime: 8 ms, faster than 100.00% of C++ online submissions for Sum of Left Leaves.
+Memory Usage: 13.4 MB, less than 100.00% of C++ online submissions for Sum of Left Leaves.
