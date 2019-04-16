@@ -263,3 +263,7 @@ Memory Usage: 13.4 MB, less than 100.00% of C++ online submissions for Sum of Le
 convert_num2hex:
 Runtime: 4 ms, faster than 100.00% of C++ online submissions for Convert a Number to Hexadecimal.
 Memory Usage: 8.1 MB, less than 100.00% of C++ online submissions for Convert a Number to Hexadecimal.
+
+longest_palindrome:
+Runtime: 8 ms, faster than 75.27% of C++ online submissions for Longest Palindrome.
+Memory Usage: 9 MB, less than 100.00% of C++ online submissions for Longest Palindrome.
