@@ -271,3 +271,7 @@ Memory Usage: 9 MB, less than 100.00% of C++ online submissions for Longest Pali
 fizz_buzz:
 Runtime: 8 ms, faster than 100.00% of C++ online submissions for Fizz Buzz.
 Memory Usage: 10.3 MB, less than 68.54% of C++ online submissions for Fizz Buzz.
+
+third_max_num:
+Runtime: 16 ms, faster than 33.36% of C++ online submissions for Third Maximum Number.
+Memory Usage: 10.4 MB, less than 35.48% of C++ online submissions for Third Maximum Number.
