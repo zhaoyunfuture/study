@@ -13,6 +13,7 @@ public:
         map<char,int> m;
         map<char,int> t;
         map<char,int>::iterator mit;
+        map<char,int>::iterator tit;
         for(int i=0;i<p.size();++i) {
             mit = m.find(p.at(i));
             if(mit==m.end())
@@ -20,13 +21,40 @@ public:
             else
                 mit->second +=1;
         }
+        bool find = true;
+        bool finalfind = true;
         int b = s.size()-p.size();
         for(int j=0;j<=b;++j) {
-            for(int k=i;k<i+p.size();++k){
-
+            t.clear();
+            find = true;
+            for(int k=j;k<j+p.size();++k){
+                mit = m.find(s.at(k));
+                if(mit == m.end()){
+                    find = false;
+                    break;
+                }else{
+                    tit = t.find(s.at(k));
+                    if(tit == t.end())
+                        t.insert(pair<char,int>(s.at(k),1));
+                    else
+                        tit->second +=1;
+                }
             }
+            finalfind = true;
+            if(find){
+                for(tit=t.begin();tit!=t.end();++tit){
+                    mit = m.find(tit->first);
+                    if(mit->second != tit->second){
+                        cout << "cont not same" << endl;
+                        finalfind = false;
+                        break;
+                    }                        
+                }
+                if(finalfind)
+                    v.push_back(j);
+            }                
         }
-
+        return v;
     }
 };
 

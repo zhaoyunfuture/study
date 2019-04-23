@@ -297,4 +297,4 @@ Runtime: 28 ms, faster than 72.47% of C++ online submissions for Path Sum III.
 Memory Usage: 14.5 MB, less than 100.00% of C++ online submissions for Path Sum III.
 
 find_all_anagrams_in_string:
-TBC
+34 / 36 test cases passed. Time Limit Exceeded
