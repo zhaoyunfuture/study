@@ -298,3 +298,5 @@ Memory Usage: 14.5 MB, less than 100.00% of C++ online submissions for Path Sum 
 
 find_all_anagrams_in_string:
 34 / 36 test cases passed. Time Limit Exceeded
+add good solution:
+https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92027/C%2B%2B-O(n)-sliding-window-concise-solution-with-explanation
