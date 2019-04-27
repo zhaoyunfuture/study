@@ -300,3 +300,7 @@ find_all_anagrams_in_string:
 34 / 36 test cases passed. Time Limit Exceeded
 add good solution:
 https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92027/C%2B%2B-O(n)-sliding-window-concise-solution-with-explanation
+
+arranging_coins:
+Runtime: 12 ms, faster than 88.00% of C++ online submissions for Arranging Coins.
+Memory Usage: 8.4 MB, less than 98.96% of C++ online submissions for Arranging Coins.
