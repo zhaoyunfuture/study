@@ -304,3 +304,7 @@ https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92027/C%2B%2
 arranging_coins:
 Runtime: 12 ms, faster than 88.00% of C++ online submissions for Arranging Coins.
 Memory Usage: 8.4 MB, less than 98.96% of C++ online submissions for Arranging Coins.
+
+string_compression:
+Runtime: 8 ms, faster than 100.00% of C++ online submissions for String Compression.
+Memory Usage: 9.4 MB, less than 96.80% of C++ online submissions for String Compression.
