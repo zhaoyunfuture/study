@@ -308,3 +308,7 @@ Memory Usage: 8.4 MB, less than 98.96% of C++ online submissions for Arranging C
 string_compression:
 Runtime: 8 ms, faster than 100.00% of C++ online submissions for String Compression.
 Memory Usage: 9.4 MB, less than 96.80% of C++ online submissions for String Compression.
+
+find_all_disappeared_in_array:
+Runtime: 116 ms, faster than 96.33% of C++ online submissions for Find All Numbers Disappeared in an Array.
+Memory Usage: 15.1 MB, less than 77.44% of C++ online submissions for Find All Numbers Disappeared in an Array.
