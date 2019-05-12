@@ -316,3 +316,7 @@ Memory Usage: 15.1 MB, less than 77.44% of C++ online submissions for Find All N
 min_mv_to_equal_array_ele:
 Runtime: 48 ms, faster than 87.70% of C++ online submissions for Minimum Moves to Equal Array Elements.
 Memory Usage: 11 MB, less than 100.00% of C++ online submissions for Minimum Moves to Equal Array Elements.
+
+assign cookies:
+20 / 21 test cases passed.
+last test case Last executed, but my alg worked! 
