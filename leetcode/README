@@ -327,4 +327,8 @@ Memory Usage: 11.6 MB, less than 92.66% of C++ online submissions for Repeated S
 
 hamming distance:
 Runtime: 0 ms, faster than 100.00% of C++ online submissions for Hamming Distance.
-Memory Usage: 8.3 MB, less than 54.72% of C++ online submissions for Hamming Distance.
+Memory Usage: 8.3 MB, less than 54.72% of C++ online submissions for Hamming Distance
+
+island_perimeter:
+Runtime: 60 ms, faster than 98.05% of C++ online submissions for Island Perimeter.
+Memory Usage: 16.2 MB, less than 70.07% of C++ online submissions for Island Perimeter..
