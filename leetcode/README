@@ -324,3 +324,7 @@ last test case Last executed, but my alg worked!
 repeated_substring_pattern:
 Runtime: 28 ms, faster than 96.57% of C++ online submissions for Repeated Substring Pattern.
 Memory Usage: 11.6 MB, less than 92.66% of C++ online submissions for Repeated Substring Pattern.
+
+hamming distance:
+Runtime: 0 ms, faster than 100.00% of C++ online submissions for Hamming Distance.
+Memory Usage: 8.3 MB, less than 54.72% of C++ online submissions for Hamming Distance.
