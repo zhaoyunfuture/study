@@ -336,3 +336,7 @@ Memory Usage: 16.2 MB, less than 70.07% of C++ online submissions for Island Per
 heaters:
 Time Limit Exceeded
 28 / 30 test cases passed.
+
+number_complement:
+Runtime: 0 ms, faster than 100.00% of C++ online submissions for Number Complement.
+Memory Usage: 8.4 MB, less than 54.22% of C++ online submissions for Number Complement.
