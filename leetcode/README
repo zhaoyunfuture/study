@@ -344,3 +344,7 @@ Memory Usage: 8.4 MB, less than 54.22% of C++ online submissions for Number Comp
 license_key_fomatting:
 Runtime: 264 ms, faster than 11.07% of C++ online submissions for License Key Formatting.
 Memory Usage: 10.4 MB, less than 82.06% of C++ online submissions for License Key Formatting.
+
+max_consecutive_ones:
+Runtime: 36 ms, faster than 93.32% of C++ online submissions for Max Consecutive Ones.
+Memory Usage: 11.8 MB, less than 59.14% of C++ online submissions for Max Consecutive Ones.
