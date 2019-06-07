@@ -352,3 +352,7 @@ Memory Usage: 11.8 MB, less than 59.14% of C++ online submissions for Max Consec
 construct_rectangle:
 Runtime: 264 ms, faster than 5.09% of C++ online submissions for Construct the Rectangle.
 Memory Usage: 8.2 MB, less than 83.21% of C++ online submissions for Construct the Rectangle.
+
+next_greater_element_I:
+Runtime: 8 ms, faster than 99.21% of C++ online submissions for Next Greater Element I.
+Memory Usage: 9.5 MB, less than 28.83% of C++ online submissions for Next Greater Element I.
