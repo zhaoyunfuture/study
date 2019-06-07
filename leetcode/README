@@ -348,3 +348,7 @@ Memory Usage: 10.4 MB, less than 82.06% of C++ online submissions for License Ke
 max_consecutive_ones:
 Runtime: 36 ms, faster than 93.32% of C++ online submissions for Max Consecutive Ones.
 Memory Usage: 11.8 MB, less than 59.14% of C++ online submissions for Max Consecutive Ones.
+
+construct_rectangle:
+Runtime: 264 ms, faster than 5.09% of C++ online submissions for Construct the Rectangle.
+Memory Usage: 8.2 MB, less than 83.21% of C++ online submissions for Construct the Rectangle.
