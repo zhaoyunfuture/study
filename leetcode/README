@@ -361,6 +361,11 @@ keyboard_row:
 Runtime: 4 ms, faster than 82.67% of C++ online submissions for Keyboard Row.
 Memory Usage: 8.4 MB, less than 75.98% of C++ online submissions for Keyboard Row.
 
+find_mode_in_BST:
+Runtime: 28 ms, faster than 75.93% of C++ online submissions for Find Mode in Binary Search Tree.
+Memory Usage: 25.2 MB, less than 36.35% of C++ online submissions for Find Mode in Binary Search Tree.
+
 base_7
 100% perf
 40% mem
+
