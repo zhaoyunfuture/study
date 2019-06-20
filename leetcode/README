@@ -372,3 +372,7 @@ base_7
 relative_ranks:
 Runtime: 316 ms, faster than 5.06% of C++ online submissions for Relative Ranks.
 Memory Usage: 11.7 MB, less than 51.81% of C++ online submissions for Relative Ranks.
+
+perfect_number:
+Runtime: 1336 ms, faster than 14.93% of C++ online submissions for Perfect Number.
+Memory Usage: 7.9 MB, less than 95.34% of C++ online submissions for Perfect Number.
