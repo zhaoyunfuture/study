@@ -376,3 +376,7 @@ Memory Usage: 11.7 MB, less than 51.81% of C++ online submissions for Relative R
 perfect_number:
 Runtime: 1336 ms, faster than 14.93% of C++ online submissions for Perfect Number.
 Memory Usage: 7.9 MB, less than 95.34% of C++ online submissions for Perfect Number.
+
+fibonacci_number:
+Runtime: 20 ms, faster than 6.43% of C++ online submissions for Fibonacci Number.
+Memory Usage: 8.3 MB, less than 49.83% of C++ online submissions for Fibonacci Number.
