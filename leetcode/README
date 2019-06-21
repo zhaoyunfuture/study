@@ -384,3 +384,18 @@ Memory Usage: 8.3 MB, less than 49.83% of C++ online submissions for Fibonacci N
 detect_capital:
 Runtime: 4 ms, faster than 80.09% of C++ online submissions for Detect Capital.
 Memory Usage: 8.1 MB, less than 75.75% of C++ online submissions for Detect Capital.
+
+longest_uncommon_subseqence:
+38 / 41 test cases passed.
+Status: Wrong Answer
+
+Submitted: 0 minutes ago
+Input: 
+""
+""
+Output: 
+0
+Expected: 
+-1
+I think this answer is not right, a is also a subseqence of aaa. so there is no common.
+
