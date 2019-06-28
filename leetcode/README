@@ -413,4 +413,8 @@ Memory Usage: 27.2 MB, less than 5.09% of C++ online submissions for Convert BST
 
 reverse_str_II:
 Runtime: 8 ms, faster than 80.84% of C++ online submissions for Reverse String II.
-Memory Usage: 9.5 MB, less than 68.97% of C++ online submissions for Reverse String II.
+Memory Usage: 9.5 MB, less than 68.97% of C++ online submissions for Reverse String II
+
+diameter of binary tree:
+Runtime: 8 ms, faster than 96.12% of C++ online submissions for Diameter of Binary Tree.
+Memory Usage: 19.3 MB, less than 96.63% of C++ online submissions for Diameter of Binary Tree..
