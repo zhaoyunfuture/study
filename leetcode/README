@@ -426,3 +426,7 @@ Memory Usage: 8.4 MB, less than 52.38% of C++ online submissions for Student Att
 reverse_words_in_string_III:
 Runtime: 20 ms, faster than 90.71% of C++ online submissions for Reverse Words in a String III.
 Memory Usage: 12 MB, less than 45.24% of C++ online submissions for Reverse Words in a String III.
+
+maximux_depth_Nary_tree:
+Runtime: 132 ms, faster than 96.29% of C++ online submissions for Maximum Depth of N-ary Tree.
+Memory Usage: 31.8 MB, less than 91.13% of C++ online submissions for Maximum Depth of N-ary Tree.
