@@ -430,3 +430,8 @@ Memory Usage: 12 MB, less than 45.24% of C++ online submissions for Reverse Word
 maximux_depth_Nary_tree:
 Runtime: 132 ms, faster than 96.29% of C++ online submissions for Maximum Depth of N-ary Tree.
 Memory Usage: 31.8 MB, less than 91.13% of C++ online submissions for Maximum Depth of N-ary Tree.
+
+array_partition_I:
+Runtime: 132 ms, faster than 9.77% of C++ online submissions for Array Partition I.
+Memory Usage: 24.5 MB, less than 5.26% of C++ online submissions for Array Partition I.
+remember to use "sort", then 71% perf, 93% mem
