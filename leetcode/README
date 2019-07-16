@@ -443,3 +443,7 @@ Memory Usage: 21.6 MB, less than 85.64% of C++ online submissions for Binary Tre
 reshape_the_matrix:
 Runtime: 56 ms, faster than 5.91% of C++ online submissions for Reshape the Matrix.
 Memory Usage: 12.3 MB, less than 23.79% of C++ online submissions for Reshape the Matrix.
+
+Subtree_of_another_tree:
+Runtime: 28 ms, faster than 82.65% of C++ online submissions for Subtree of Another Tree.
+Memory Usage: 20.8 MB, less than 88.41% of C++ online submissions for Subtree of Another Tree.
