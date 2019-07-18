@@ -447,3 +447,7 @@ Memory Usage: 12.3 MB, less than 23.79% of C++ online submissions for Reshape th
 Subtree_of_another_tree:
 Runtime: 28 ms, faster than 82.65% of C++ online submissions for Subtree of Another Tree.
 Memory Usage: 20.8 MB, less than 88.41% of C++ online submissions for Subtree of Another Tree.
+
+distribute_candies:
+Runtime: 340 ms, faster than 34.50% of C++ online submissions for Distribute Candies.
+Memory Usage: 41.4 MB, less than 81.23% of C++ online submissions for Distribute Candies.
