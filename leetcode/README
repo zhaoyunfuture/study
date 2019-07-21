@@ -454,4 +454,8 @@ Memory Usage: 41.4 MB, less than 81.23% of C++ online submissions for Distribute
 
 shortest_unsorted_cont_subarray:
 Runtime: 96 ms, faster than 6.49% of C++ online submissions for Shortest Unsorted Continuous Subarray.
-Memory Usage: 20.8 MB, less than 5.15% of C++ online submissions for Shortest Unsorted Continuous Subarray..
+Memory Usage: 20.8 MB, less than 5.15% of C++ online submissions for Shortest Unsorted Continuous Subarray.
+
+N-ary_tree_preorder_traveral:
+Runtime: 156 ms, faster than 53.25% of C++ online submissions for N-ary Tree Preorder Traversal.
+Memory Usage: 32.3 MB, less than 91.09% of C++ online submissions for N-ary Tree Preorder Traversal..
