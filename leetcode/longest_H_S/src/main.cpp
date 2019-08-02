@@ -8,7 +8,7 @@ using namespace std;
 class Solution {
 	public:
 		struct mapcomp {
-			bool operator() (const char& lhs, const char& rhs) const
+			bool operator() (const int& lhs, const int& rhs) const
 			{return lhs<rhs;}
 		};
 		int findLHS(vector<int>& nums) {

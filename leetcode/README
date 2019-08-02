@@ -465,4 +465,5 @@ Runtime: 144 ms, faster than 93.31% of C++ online submissions for N-ary Tree Pos
 Memory Usage: 32.5 MB, less than 69.29% of C++ online submissions for N-ary Tree Postorder Traversal.
 
 longest_H_S:
-weird
+Runtime: 260 ms, faster than 5.46% of C++ online submissions for Longest Harmonious Subsequence.
+Memory Usage: 20.7 MB, less than 50.00% of C++ online submissions for Longest Harmonious Subsequence.
