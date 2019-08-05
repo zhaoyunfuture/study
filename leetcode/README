@@ -471,3 +471,7 @@ Memory Usage: 20.7 MB, less than 50.00% of C++ online submissions for Longest Ha
 range_addition_II:
 Runtime: 8 ms, faster than 92.35% of C++ online submissions for Range Addition II.
 Memory Usage: 11.5 MB, less than 88.89% of C++ online submissions for Range Addition II.
+
+min_index_sum_of_two_list:
+Runtime: 168 ms, faster than 5.68% of C++ online submissions for Minimum Index Sum of Two Lists.
+Memory Usage: 21.2 MB, less than 100.00% of C++ online submissions for Minimum Index Sum of Two Lists.
