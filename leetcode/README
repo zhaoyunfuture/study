@@ -475,3 +475,7 @@ Memory Usage: 11.5 MB, less than 88.89% of C++ online submissions for Range Addi
 min_index_sum_of_two_list:
 Runtime: 168 ms, faster than 5.68% of C++ online submissions for Minimum Index Sum of Two Lists.
 Memory Usage: 21.2 MB, less than 100.00% of C++ online submissions for Minimum Index Sum of Two Lists.
+
+can_place_flowers:
+Runtime: 16 ms, faster than 84.65% of C++ online submissions for Can Place Flowers.
+Memory Usage: 10.2 MB, less than 100.00% of C++ online submissions for Can Place Flowers.
