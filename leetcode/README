@@ -483,3 +483,7 @@ Memory Usage: 10.2 MB, less than 100.00% of C++ online submissions for Can Place
 construct_string_from_binary_tree:
 Runtime: 8 ms, faster than 99.86% of C++ online submissions for Construct String from Binary Tree.
 Memory Usage: 20.8 MB, less than 100.00% of C++ online submissions for Construct String from Binary Tree.
+
+merge_two_binary_trees:
+Runtime: 44 ms, faster than 24.76% of C++ online submissions for Merge Two Binary Trees.
+Memory Usage: 21.2 MB, less than 19.44% of C++ online submissions for Merge Two Binary Trees.
