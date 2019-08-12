@@ -487,3 +487,7 @@ Memory Usage: 20.8 MB, less than 100.00% of C++ online submissions for Construct
 merge_two_binary_trees:
 Runtime: 44 ms, faster than 24.76% of C++ online submissions for Merge Two Binary Trees.
 Memory Usage: 21.2 MB, less than 19.44% of C++ online submissions for Merge Two Binary Trees.
+
+max_product_of_three_num:
+Runtime: 88 ms, faster than 6.30% of C++ online submissions for Maximum Product of Three Numbers.
+Memory Usage: 19.7 MB, less than 6.67% of C++ online submissions for Maximum Product of Three Numbers.
