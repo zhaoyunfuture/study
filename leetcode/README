@@ -507,3 +507,7 @@ Memory Usage: 16.8 MB, less than 100.00% of C++ online submissions for Maximum A
 set_mismatch:
 Runtime: 104 ms, faster than 9.58% of C++ online submissions for Set Mismatch.
 Memory Usage: 22.2 MB, less than 25.00% of C++ online submissions for Set Mismatch.
+
+two_sum_IV-input is a BST:
+Runtime: 44 ms, faster than 54.66% of C++ online submissions for Two Sum IV - Input is a BST.
+Memory Usage: 26.2 MB, less than 35.00% of C++ online submissions for Two Sum IV - Input is a BST.
