@@ -519,3 +519,7 @@ Memory Usage: 10.2 MB, less than 73.17% of C++ online submissions for Robot Retu
 image_smoother:
 Runtime: 152 ms, faster than 49.34% of C++ online submissions for Image Smoother.
 Memory Usage: 17.8 MB, less than 50.00% of C++ online submissions for Image Smoother.
+
+non_decreasing_array:
+Runtime: 24 ms, faster than 97.44% of C++ online submissions for Non-decreasing Array.
+Memory Usage: 10.3 MB, less than 85.00% of C++ online submissions for Non-decreasing Array.
