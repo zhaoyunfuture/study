@@ -515,3 +515,7 @@ Memory Usage: 26.2 MB, less than 35.00% of C++ online submissions for Two Sum IV
 robot_return_to_origin:
 Runtime: 12 ms, faster than 97.16% of C++ online submissions for Robot Return to Origin.
 Memory Usage: 10.2 MB, less than 73.17% of C++ online submissions for Robot Return to Origin.
+
+image_smoother:
+Runtime: 152 ms, faster than 49.34% of C++ online submissions for Image Smoother.
+Memory Usage: 17.8 MB, less than 50.00% of C++ online submissions for Image Smoother.
