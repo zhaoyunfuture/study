@@ -523,3 +523,7 @@ Memory Usage: 17.8 MB, less than 50.00% of C++ online submissions for Image Smoo
 non_decreasing_array:
 Runtime: 24 ms, faster than 97.44% of C++ online submissions for Non-decreasing Array.
 Memory Usage: 10.3 MB, less than 85.00% of C++ online submissions for Non-decreasing Array.
+
+trim_BST:
+Runtime: 24 ms, faster than 34.74% of C++ online submissions for Trim a Binary Search Tree.
+Memory Usage: 21.8 MB, less than 5.26% of C++ online submissions for Trim a Binary Search Tree.
