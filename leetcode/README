@@ -527,3 +527,7 @@ Memory Usage: 10.3 MB, less than 85.00% of C++ online submissions for Non-decrea
 trim_BST:
 Runtime: 24 ms, faster than 34.74% of C++ online submissions for Trim a Binary Search Tree.
 Memory Usage: 21.8 MB, less than 5.26% of C++ online submissions for Trim a Binary Search Tree.
+
+second_min_node_in_BST:
+Runtime: 4 ms, faster than 55.41% of C++ online submissions for Second Minimum Node In a Binary Tree.
+Memory Usage: 8.7 MB, less than 35.71% of C++ online submissions for Second Minimum Node In a Binary Tree.
