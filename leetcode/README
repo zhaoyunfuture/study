@@ -531,3 +531,7 @@ Memory Usage: 21.8 MB, less than 5.26% of C++ online submissions for Trim a Bina
 second_min_node_in_BST:
 Runtime: 4 ms, faster than 55.41% of C++ online submissions for Second Minimum Node In a Binary Tree.
 Memory Usage: 8.7 MB, less than 35.71% of C++ online submissions for Second Minimum Node In a Binary Tree.
+
+longest_cont_increasing_subseq:
+Runtime: 16 ms, faster than 57.06% of C++ online submissions for Longest Continuous Increasing Subsequence.
+Memory Usage: 9.3 MB, less than 88.89% of C++ online submissions for Longest Continuous Increasing Subsequence.
