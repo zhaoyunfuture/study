@@ -543,3 +543,7 @@ Memory Usage: 32.3 MB, less than 9.09% of C++ online submissions for Valid Palin
 baseball_game:
 Runtime: 0 ms, faster than 100.00% of C++ online submissions for Baseball Game.
 Memory Usage: 10 MB, less than 12.50% of C++ online submissions for Baseball Game.
+
+repeated_string_match:
+Runtime: 4 ms, faster than 98.07% of C++ online submissions for Repeated String Match.
+Memory Usage: 8.7 MB, less than 100.00% of C++ online submissions for Repeated String Match.
