@@ -547,3 +547,7 @@ Memory Usage: 10 MB, less than 12.50% of C++ online submissions for Baseball Gam
 repeated_string_match:
 Runtime: 4 ms, faster than 98.07% of C++ online submissions for Repeated String Match.
 Memory Usage: 8.7 MB, less than 100.00% of C++ online submissions for Repeated String Match.
+
+employee_importance:
+Runtime: 44 ms, faster than 14.00% of C++ online submissions for Employee Importance.
+Memory Usage: 37.2 MB, less than 28.57% of C++ online submissions for Employee Importance.
