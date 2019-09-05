@@ -551,3 +551,7 @@ Memory Usage: 8.7 MB, less than 100.00% of C++ online submissions for Repeated S
 employee_importance:
 Runtime: 44 ms, faster than 14.00% of C++ online submissions for Employee Importance.
 Memory Usage: 37.2 MB, less than 28.57% of C++ online submissions for Employee Importance.
+
+binary_num_with_alternating_bits:
+Runtime: 0 ms, faster than 100.00% of C++ online submissions for Binary Number with Alternating Bits.
+Memory Usage: 8.1 MB, less than 100.00% of C++ online submissions for Binary Number with Alternating Bits.
