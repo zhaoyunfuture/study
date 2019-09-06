@@ -560,3 +560,7 @@ count_binary_substrings:
 86 / 90 test cases passed.
 Status: Time Limit Exceeded 
 Actually, the algorithm is work, but for the big data, the perf is so low.
+
+degree_of_an_array:
+Runtime: 44 ms, faster than 66.37% of C++ online submissions for Degree of an Array.
+Memory Usage: 14.8 MB, less than 36.36% of C++ online submissions for Degree of an Array.
