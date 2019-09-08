@@ -568,3 +568,7 @@ Memory Usage: 14.8 MB, less than 36.36% of C++ online submissions for Degree of 
 search_in_BST:
 Runtime: 48 ms, faster than 87.07% of C++ online submissions for Search in a Binary Search Tree.
 Memory Usage: 28.9 MB, less than 97.56% of C++ online submissions for Search in a Binary Search Tree.
+
+Kth_largest_element_in_stream:
+Runtime: 1416 ms, faster than 5.01% of C++ online submissions for Kth Largest Element in a Stream.
+Memory Usage: 21.1 MB, less than 10.00% of C++ online submissions for Kth Largest Element in a Stream.
