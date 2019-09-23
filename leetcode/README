@@ -580,3 +580,8 @@ Memory Usage: 8.6 MB, less than 100.00% of C++ online submissions for 1-bit and 
 find_pivot_index:
 Runtime: 28 ms, faster than 56.99% of C++ online submissions for Find Pivot Index.
 Memory Usage: 11.5 MB, less than 9.52% of C++ online submissions for Find Pivot Index.
+
+min_cost_climbing_stairs:
+256 / 276 test cases passed.
+Status: Time Limit Exceeded
+I think alg is worked yet.
