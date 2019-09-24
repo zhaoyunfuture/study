@@ -585,3 +585,7 @@ min_cost_climbing_stairs:
 256 / 276 test cases passed.
 Status: Time Limit Exceeded
 I think alg is worked yet.
+
+self_dividing_num:
+Runtime: 24 ms, faster than 6.41% of C++ online submissions for Self Dividing Numbers.
+Memory Usage: 12.5 MB, less than 8.00% of C++ online submissions for Self Dividing Numbers.
