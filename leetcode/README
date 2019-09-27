@@ -594,4 +594,6 @@ reach_a_number:
 >>>>>> this alg is so cool <<<<<<<
 100% perf 90% mem
 
-
+prime_num_of_set_bits_in_binary:
+Runtime: 40 ms, faster than 21.50% of C++ online submissions for Prime Number of Set Bits in Binary Representation.
+Memory Usage: 8.3 MB, less than 58.33% of C++ online submissions for Prime Number of Set Bits in Binary Representation.
