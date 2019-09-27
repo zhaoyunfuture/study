@@ -597,3 +597,7 @@ reach_a_number:
 prime_num_of_set_bits_in_binary:
 Runtime: 40 ms, faster than 21.50% of C++ online submissions for Prime Number of Set Bits in Binary Representation.
 Memory Usage: 8.3 MB, less than 58.33% of C++ online submissions for Prime Number of Set Bits in Binary Representation.
+
+toeplitz_matrix:
+Runtime: 16 ms, faster than 19.98% of C++ online submissions for Toeplitz Matrix.
+Memory Usage: 9.7 MB, less than 71.43% of C++ online submissions for Toeplitz Matrix.
