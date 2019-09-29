@@ -601,3 +601,7 @@ Memory Usage: 8.3 MB, less than 58.33% of C++ online submissions for Prime Numbe
 toeplitz_matrix:
 Runtime: 16 ms, faster than 19.98% of C++ online submissions for Toeplitz Matrix.
 Memory Usage: 9.7 MB, less than 71.43% of C++ online submissions for Toeplitz Matrix.
+
+letter_case_permutation:
+Runtime: 12 ms, faster than 54.40% of C++ online submissions for Letter Case Permutation.
+Memory Usage: 11.7 MB, less than 100.00% of C++ online submissions for Letter Case Permutation.
