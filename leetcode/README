@@ -621,3 +621,7 @@ Memory Usage: 9.1 MB, less than 61.54% of C++ online submissions for Unique Mors
 num_of_lines_to_write_string:
 Runtime: 0 ms, faster than 100.00% of C++ online submissions for Number of Lines To Write String.
 Memory Usage: 8.7 MB, less than 80.00% of C++ online submissions for Number of Lines To Write String.
+
+subdomain_visit_count:
+Runtime: 24 ms, faster than 34.40% of C++ online submissions for Subdomain Visit Count.
+Memory Usage: 13.2 MB, less than 86.67% of C++ online submissions for Subdomain Visit Count.
