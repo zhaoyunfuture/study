@@ -632,3 +632,7 @@ math alg , cool solution.
 positions_of_large_groups:
 Runtime: 8 ms, faster than 71.54% of C++ online submissions for Positions of Large Groups.
 Memory Usage: 9.4 MB, less than 40.00% of C++ online submissions for Positions of Large Groups.
+
+flipping_an_image:
+Runtime: 12 ms, faster than 70.51% of C++ online submissions for Flipping an Image.
+Memory Usage: 9.2 MB, less than 100.00% of C++ online submissions for Flipping an Image.
