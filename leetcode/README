@@ -628,3 +628,7 @@ Memory Usage: 13.2 MB, less than 86.67% of C++ online submissions for Subdomain 
 
 largest_triangle_area:
 math alg , cool solution.
+
+positions_of_large_groups:
+Runtime: 8 ms, faster than 71.54% of C++ online submissions for Positions of Large Groups.
+Memory Usage: 9.4 MB, less than 40.00% of C++ online submissions for Positions of Large Groups.
