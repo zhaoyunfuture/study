@@ -625,3 +625,6 @@ Memory Usage: 8.7 MB, less than 80.00% of C++ online submissions for Number of L
 subdomain_visit_count:
 Runtime: 24 ms, faster than 34.40% of C++ online submissions for Subdomain Visit Count.
 Memory Usage: 13.2 MB, less than 86.67% of C++ online submissions for Subdomain Visit Count.
+
+largest_triangle_area:
+math alg , cool solution.
