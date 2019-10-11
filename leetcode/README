@@ -636,3 +636,7 @@ Memory Usage: 9.4 MB, less than 40.00% of C++ online submissions for Positions o
 flipping_an_image:
 Runtime: 12 ms, faster than 70.51% of C++ online submissions for Flipping an Image.
 Memory Usage: 9.2 MB, less than 100.00% of C++ online submissions for Flipping an Image.
+
+rectangle_overlap:
+Runtime: 0 ms, faster than 100.00% of C++ online submissions for Rectangle Overlap.
+Memory Usage: 8 MB, less than 100.00% of C++ online submissions for Rectangle Overlap.
