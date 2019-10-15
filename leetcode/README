@@ -640,3 +640,7 @@ Memory Usage: 9.2 MB, less than 100.00% of C++ online submissions for Flipping a
 magic_squares_in_grid:
 Runtime: 0 ms, faster than 100.00% of C++ online submissions for Magic Squares In Grid.
 Memory Usage: 8.6 MB, less than 100.00% of C++ online submissions for Magic Squares In Grid.
+
+rectangle_overlap:
+Runtime: 0 ms, faster than 100.00% of C++ online submissions for Rectangle Overlap.
+Memory Usage: 8 MB, less than 100.00% of C++ online submissions for Rectangle Overlap.
