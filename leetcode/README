@@ -652,3 +652,7 @@ Memory Usage: 8.5 MB, less than 72.73% of C++ online submissions for Backspace S
 max_distance_to_closest_person:
 Runtime: 12 ms, faster than 88.59% of C++ online submissions for Maximize Distance to Closest Person.
 Memory Usage: 9.9 MB, less than 76.47% of C++ online submissions for Maximize Distance to Closest Person.
+
+buddy_string:
+Runtime: 4 ms, faster than 98.43% of C++ online submissions for Buddy Strings.
+Memory Usage: 9.3 MB, less than 25.00% of C++ online submissions for Buddy Strings.
