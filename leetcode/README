@@ -664,3 +664,7 @@ Memory Usage: 9.7 MB, less than 100.00% of C++ online submissions for Lemonade C
 transpose_matrix:
 Runtime: 28 ms, faster than 59.14% of C++ online submissions for Transpose Matrix.
 Memory Usage: 11.6 MB, less than 61.54% of C++ online submissions for Transpose Matrix.
+
+leaf_similar_trees:
+Runtime: 8 ms, faster than 33.70% of C++ online submissions for Leaf-Similar Trees.
+Memory Usage: 14.1 MB, less than 77.78% of C++ online submissions for Leaf-Similar Trees.
