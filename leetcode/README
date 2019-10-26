@@ -672,3 +672,7 @@ Memory Usage: 14.1 MB, less than 77.78% of C++ online submissions for Leaf-Simil
 walking robot:
 45 / 47 test cases passed.
 Status: Time Limit Exceeded
+
+uncommon_word_from_two_sentences:
+Runtime: 4 ms, faster than 69.74% of C++ online submissions for Uncommon Words from Two Sentences.
+Memory Usage: 9.3 MB, less than 37.50% of C++ online submissions for Uncommon Words from Two Sentences.
