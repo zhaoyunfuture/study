@@ -676,3 +676,7 @@ Status: Time Limit Exceeded
 uncommon_word_from_two_sentences:
 Runtime: 4 ms, faster than 69.74% of C++ online submissions for Uncommon Words from Two Sentences.
 Memory Usage: 9.3 MB, less than 37.50% of C++ online submissions for Uncommon Words from Two Sentences.
+
+fair_candy_swap:
+Runtime: 168 ms, faster than 30.51% of C++ online submissions for Fair Candy Swap.
+Memory Usage: 25.1 MB, less than 10.00% of C++ online submissions for Fair Candy Swap.
