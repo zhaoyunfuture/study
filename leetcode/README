@@ -680,3 +680,7 @@ Memory Usage: 9.3 MB, less than 37.50% of C++ online submissions for Uncommon Wo
 fair_candy_swap:
 Runtime: 168 ms, faster than 30.51% of C++ online submissions for Fair Candy Swap.
 Memory Usage: 25.1 MB, less than 10.00% of C++ online submissions for Fair Candy Swap.
+
+monotonic_array:
+Runtime: 88 ms, faster than 18.82% of C++ online submissions for Monotonic Array.
+Memory Usage: 14.1 MB, less than 84.21% of C++ online submissions for Monotonic Array.
