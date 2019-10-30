@@ -684,3 +684,7 @@ Memory Usage: 25.1 MB, less than 10.00% of C++ online submissions for Fair Candy
 monotonic_array:
 Runtime: 88 ms, faster than 18.82% of C++ online submissions for Monotonic Array.
 Memory Usage: 14.1 MB, less than 84.21% of C++ online submissions for Monotonic Array.
+
+increasing_order_search_tree:
+Runtime: 28 ms, faster than 97.03% of C++ online submissions for Increasing Order Search Tree.
+Memory Usage: 24.3 MB, less than 30.00% of C++ online submissions for Increasing Order Search Tree.
