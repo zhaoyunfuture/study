@@ -692,3 +692,7 @@ Memory Usage: 24.3 MB, less than 30.00% of C++ online submissions for Increasing
 sort_array_by_parity:
 Runtime: 224 ms, faster than 7.44% of C++ online submissions for Sort Array By Parity.
 Memory Usage: 9.6 MB, less than 75.86% of C++ online submissions for Sort Array By Parity.
+
+smallest_range_I:
+Runtime: 20 ms, faster than 88.17% of C++ online submissions for Smallest Range I.
+Memory Usage: 9.6 MB, less than 87.50% of C++ online submissions for Smallest Range I.
