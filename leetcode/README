@@ -699,3 +699,7 @@ Memory Usage: 9.6 MB, less than 87.50% of C++ online submissions for Smallest Ra
 
 x_of_a_kind_in_a_deck_of_cards:
 go on..
+
+sort_array_by_parity_II:
+Runtime: 108 ms, faster than 7.18% of C++ online submissions for Sort Array By Parity II.
+Memory Usage: 15.8 MB, less than 6.25% of C++ online submissions for Sort Array By Parity II.
