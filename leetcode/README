@@ -703,3 +703,7 @@ go on..
 sort_array_by_parity_II:
 Runtime: 108 ms, faster than 7.18% of C++ online submissions for Sort Array By Parity II.
 Memory Usage: 15.8 MB, less than 6.25% of C++ online submissions for Sort Array By Parity II.
+
+long_pressed_name:
+Runtime: 8 ms, faster than 61.97% of C++ online submissions for Long Pressed Name.
+Memory Usage: 8.7 MB, less than 14.29% of C++ online submissions for Long Pressed Name.
