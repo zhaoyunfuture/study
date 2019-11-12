@@ -711,3 +711,7 @@ Memory Usage: 8.7 MB, less than 14.29% of C++ online submissions for Long Presse
 unique_email_addre:
 Runtime: 32 ms, faster than 79.37% of C++ online submissions for Unique Email Addresses.
 Memory Usage: 14.5 MB, less than 19.05% of C++ online submissions for Unique Email Addresses.
+
+number_of_recent_call:
+Runtime: 712 ms, faster than 5.01% of C++ online submissions for Number of Recent Calls.
+Memory Usage: 50.5 MB, less than 9.09% of C++ online submissions for Number of Recent Calls.
