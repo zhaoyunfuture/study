@@ -715,3 +715,8 @@ Memory Usage: 14.5 MB, less than 19.05% of C++ online submissions for Unique Ema
 number_of_recent_call:
 Runtime: 712 ms, faster than 5.01% of C++ online submissions for Number of Recent Calls.
 Memory Usage: 50.5 MB, less than 9.09% of C++ online submissions for Number of Recent Calls.
+
+range_sum_of_BST:
+Runtime: 144 ms, faster than 89.09% of C++ online submissions for Range Sum of BST.
+Memory Usage: 40.9 MB, less than 100.00% of C++ online submissions for Range Sum of BST.
+
