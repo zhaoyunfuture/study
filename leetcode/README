@@ -707,3 +707,7 @@ Memory Usage: 15.8 MB, less than 6.25% of C++ online submissions for Sort Array 
 long_pressed_name:
 Runtime: 8 ms, faster than 61.97% of C++ online submissions for Long Pressed Name.
 Memory Usage: 8.7 MB, less than 14.29% of C++ online submissions for Long Pressed Name.
+
+unique_email_addre:
+Runtime: 32 ms, faster than 79.37% of C++ online submissions for Unique Email Addresses.
+Memory Usage: 14.5 MB, less than 19.05% of C++ online submissions for Unique Email Addresses.
