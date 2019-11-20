@@ -731,3 +731,7 @@ Memory Usage: 11.1 MB, less than 7.14% of C++ online submissions for DI String M
 couple_holding_hands:
 Runtime: 0 ms, faster than 100.00% of C++ online submissions for Couples Holding Hands.
 Memory Usage: 8.7 MB, less than 23.08% of C++ online submissions for Couples Holding Hands.
+
+delete_columns_to_make_sorted:
+Runtime: 56 ms, faster than 88.25% of C++ online submissions for Delete Columns to Make Sorted.
+Memory Usage: 13 MB, less than 100.00% of C++ online submissions for Delete Columns to Make Sorted.
