@@ -735,3 +735,7 @@ Memory Usage: 8.7 MB, less than 23.08% of C++ online submissions for Couples Hol
 delete_columns_to_make_sorted:
 Runtime: 56 ms, faster than 88.25% of C++ online submissions for Delete Columns to Make Sorted.
 Memory Usage: 13 MB, less than 100.00% of C++ online submissions for Delete Columns to Make Sorted.
+
+largest_time_for_given_digits:
+Runtime: 4 ms, faster than 64.86% of C++ online submissions for Largest Time for Given Digits.
+Memory Usage: 8.6 MB, less than 10.00% of C++ online submissions for Largest Time for Given Digits.
