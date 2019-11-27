@@ -743,3 +743,7 @@ Memory Usage: 8.6 MB, less than 10.00% of C++ online submissions for Largest Tim
 univalued_binary_tree:
 Runtime: 4 ms, faster than 66.81% of C++ online submissions for Univalued Binary Tree.
 Memory Usage: 10.6 MB, less than 100.00% of C++ online submissions for Univalued Binary Tree.
+
+powerful_integer:
+Runtime: 4 ms, faster than 63.37% of C++ online submissions for Powerful Integers.
+Memory Usage: 8.6 MB, less than 55.56% of C++ online submissions for Powerful Integers.
