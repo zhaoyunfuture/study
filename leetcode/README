@@ -739,3 +739,7 @@ Memory Usage: 13 MB, less than 100.00% of C++ online submissions for Delete Colu
 largest_time_for_given_digits:
 Runtime: 4 ms, faster than 64.86% of C++ online submissions for Largest Time for Given Digits.
 Memory Usage: 8.6 MB, less than 10.00% of C++ online submissions for Largest Time for Given Digits.
+
+univalued_binary_tree:
+Runtime: 4 ms, faster than 66.81% of C++ online submissions for Univalued Binary Tree.
+Memory Usage: 10.6 MB, less than 100.00% of C++ online submissions for Univalued Binary Tree.
