@@ -747,3 +747,7 @@ Memory Usage: 10.6 MB, less than 100.00% of C++ online submissions for Univalued
 powerful_integer:
 Runtime: 4 ms, faster than 63.37% of C++ online submissions for Powerful Integers.
 Memory Usage: 8.6 MB, less than 55.56% of C++ online submissions for Powerful Integers.
+
+largest_perimeter_triangle:
+Runtime: 56 ms, faster than 49.94% of C++ online submissions for Largest Perimeter Triangle.
+Memory Usage: 10.6 MB, less than 50.00% of C++ online submissions for Largest Perimeter Triangle.
