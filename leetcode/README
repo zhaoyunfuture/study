@@ -751,3 +751,7 @@ Memory Usage: 8.6 MB, less than 55.56% of C++ online submissions for Powerful In
 largest_perimeter_triangle:
 Runtime: 56 ms, faster than 49.94% of C++ online submissions for Largest Perimeter Triangle.
 Memory Usage: 10.6 MB, less than 50.00% of C++ online submissions for Largest Perimeter Triangle.
+
+sum_of_even_num_after_queries:
+Runtime: 168 ms, faster than 38.50% of C++ online submissions for Sum of Even Numbers After Queries.
+Memory Usage: 28.9 MB, less than 93.75% of C++ online submissions for Sum of Even Numbers After Queries.
