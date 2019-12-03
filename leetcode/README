@@ -763,3 +763,7 @@ Memory Usage: 13.8 MB, less than 33.33% of C++ online submissions for Add to Arr
 cousins_in_binary_tree:
 Runtime: 0 ms, faster than 100.00% of C++ online submissions for Cousins in Binary Tree.
 Memory Usage: 11.2 MB, less than 93.33% of C++ online submissions for Cousins in Binary Tree.
+
+rotting_oranges:
+Runtime: 8 ms, faster than 60.93% of C++ online submissions for Rotting Oranges.
+Memory Usage: 11 MB, less than 6.25% of C++ online submissions for Rotting Oranges.
