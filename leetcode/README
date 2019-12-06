@@ -771,3 +771,7 @@ Memory Usage: 11 MB, less than 6.25% of C++ online submissions for Rotting Orang
 find_common_char:
 Runtime: 36 ms, faster than 8.58% of C++ online submissions for Find Common Characters.
 Memory Usage: 12.9 MB, less than 8.33% of C++ online submissions for Find Common Characters.
+
+max_sum_of_array_after_K_negations:
+Runtime: 4 ms, faster than 97.92% of C++ online submissions for Maximize Sum Of Array After K Negations.
+Memory Usage: 8.8 MB, less than 57.14% of C++ online submissions for Maximize Sum Of Array After K Negations.
