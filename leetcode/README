@@ -775,3 +775,7 @@ Memory Usage: 12.9 MB, less than 8.33% of C++ online submissions for Find Common
 max_sum_of_array_after_K_negations:
 Runtime: 4 ms, faster than 97.92% of C++ online submissions for Maximize Sum Of Array After K Negations.
 Memory Usage: 8.8 MB, less than 57.14% of C++ online submissions for Maximize Sum Of Array After K Negations.
+
+pairs_of_songs_divisible_60:
+Runtime: 56 ms, faster than 8.09% of C++ online submissions for Pairs of Songs With Total Durations Divisible by 60.
+Memory Usage: 11.8 MB, less than 38.46% of C++ online submissions for Pairs of Songs With Total Durations Divisible by 60.
