@@ -767,3 +767,7 @@ Memory Usage: 11.2 MB, less than 93.33% of C++ online submissions for Cousins in
 rotting_oranges:
 Runtime: 8 ms, faster than 60.93% of C++ online submissions for Rotting Oranges.
 Memory Usage: 11 MB, less than 6.25% of C++ online submissions for Rotting Oranges.
+
+find_common_char:
+Runtime: 36 ms, faster than 8.58% of C++ online submissions for Find Common Characters.
+Memory Usage: 12.9 MB, less than 8.33% of C++ online submissions for Find Common Characters.
