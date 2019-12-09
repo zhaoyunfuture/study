@@ -783,3 +783,8 @@ Memory Usage: 11.8 MB, less than 38.46% of C++ online submissions for Pairs of S
 partition_array_into_three_parts_equal_sum:
 Runtime: 64 ms, faster than 88.53% of C++ online submissions for Partition Array Into Three Parts With Equal Sum.
 Memory Usage: 12.6 MB, less than 90.91% of C++ online submissions for Partition Array Into Three Parts With Equal Sum.
+
+binary_prefix_divisible_by_5:
+Runtime: 12 ms, faster than 86.94% of C++ online submissions for Binary Prefix Divisible By 5.
+Memory Usage: 10.8 MB, less than 78.57% of C++ online submissions for Binary Prefix Divisible By 5.
+
