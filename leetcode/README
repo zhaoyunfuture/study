@@ -788,3 +788,6 @@ binary_prefix_divisible_by_5:
 Runtime: 12 ms, faster than 86.94% of C++ online submissions for Binary Prefix Divisible By 5.
 Memory Usage: 10.8 MB, less than 78.57% of C++ online submissions for Binary Prefix Divisible By 5.
 
+remove_outermost_parentheses:
+Runtime: 4 ms, faster than 88.67% of C++ online submissions for Remove Outermost Parentheses.
+Memory Usage: 9.1 MB, less than 72.50% of C++ online submissions for Remove Outermost Parentheses.
