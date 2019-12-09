@@ -779,3 +779,7 @@ Memory Usage: 8.8 MB, less than 57.14% of C++ online submissions for Maximize Su
 pairs_of_songs_divisible_60:
 Runtime: 56 ms, faster than 8.09% of C++ online submissions for Pairs of Songs With Total Durations Divisible by 60.
 Memory Usage: 11.8 MB, less than 38.46% of C++ online submissions for Pairs of Songs With Total Durations Divisible by 60.
+
+partition_array_into_three_parts_equal_sum:
+Runtime: 64 ms, faster than 88.53% of C++ online submissions for Partition Array Into Three Parts With Equal Sum.
+Memory Usage: 12.6 MB, less than 90.91% of C++ online submissions for Partition Array Into Three Parts With Equal Sum.
