@@ -791,3 +791,7 @@ Memory Usage: 10.8 MB, less than 78.57% of C++ online submissions for Binary Pre
 remove_outermost_parentheses:
 Runtime: 4 ms, faster than 88.67% of C++ online submissions for Remove Outermost Parentheses.
 Memory Usage: 9.1 MB, less than 72.50% of C++ online submissions for Remove Outermost Parentheses.
+
+sum_of_root_to_leaf:
+Runtime: 32 ms, faster than 9.68% of C++ online submissions for Sum of Root To Leaf Binary Numbers.
+Memory Usage: 30.2 MB, less than 6.67% of C++ online submissions for Sum of Root To Leaf Binary Numbers.
