@@ -799,3 +799,7 @@ Memory Usage: 30.2 MB, less than 6.67% of C++ online submissions for Sum of Root
 divisor_game:
 Runtime: 4 ms, faster than 60.61% of C++ online submissions for Divisor Game.
 Memory Usage: 8.1 MB, less than 96.55% of C++ online submissions for Divisor Game.
+
+two_city_scheduling:
+Runtime: 8 ms, faster than 45.48% of C++ online submissions for Two City Scheduling.
+Memory Usage: 9.4 MB, less than 84.21% of C++ online submissions for Two City Scheduling.
