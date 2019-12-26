@@ -1,7 +1,0 @@
-class MockAccountManager : public AccountManager {
- public:
-  MOCK_METHOD1(findAccountForUser,
-      Account(const std::string& userId));
-  MOCK_METHOD1(updateAccount,
-      void(const Account& account));
-};
