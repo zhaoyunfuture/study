@@ -1,0 +1,19 @@
+//prefix for display and network
+1. CPU Num, memory cache, bridge mode
+2. add 96proxy to /etc/apt/apt.conf.d
+3. sudo mount -t vboxsf share /mnt/share
+
+//settings
+1. root password: sudo passwd
+2. add path to ~/.bashrc export PATH=$PATH:
+
+//install tools
+1. apt install vim
+2. apt install git 
+3. awesome_vim https://github.com/amix/vimrc.git
+4. config git
+    git config --list //to show current config 
+    git config --global user.name Jacob
+    git config --global user.email zyfuture@qq.com
+    git config --global http://135.245.48.34:8000
+    git config --global https://135.245.48.34:8000
