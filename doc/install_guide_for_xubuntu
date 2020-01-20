@@ -6,6 +6,13 @@
 //settings
 1. root password: sudo passwd
 2. add path to ~/.bashrc export PATH=$PATH:
+3. enable rc.local // refer to https://www.linuxbabe.com/linux-server/how-to-enable-etcrc-local-with-systemd
+    create rc.local under /etc/rc.d/ then ln -s it
+    create rc-local.service under /etc/systemd/system/
+    sudo systemctl enable rc-local
+    sudo systemctl start rc-local.service
+    sudo systemctl status rc-local.service
+
 
 //install tools
 1. apt install vim
