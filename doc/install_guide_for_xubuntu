@@ -13,7 +13,8 @@
 3. awesome_vim https://github.com/amix/vimrc.git
 4. config git
     git config --list //to show current config 
-    git config --global user.name Jacob
+    git config --global user.name zhaoyunfuture 
     git config --global user.email zyfuture@qq.com
     git config --global http://135.245.48.34:8000
     git config --global https://135.245.48.34:8000
+    git config --global credential.helper store
