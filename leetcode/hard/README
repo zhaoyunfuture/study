@@ -1,2 +1,6 @@
 regular_expression_matching:
 the case "aaa" "ab*a*c*a" how to solve?
+
+reverse_nodes_K_group:
+Runtime: 24 ms, faster than 55.47% of C++ online submissions for Reverse Nodes in k-Group.
+Memory Usage: 11.3 MB, less than 6.45% of C++ online submissions for Reverse Nodes in k-Group
