@@ -4,3 +4,7 @@ the case "aaa" "ab*a*c*a" how to solve?
 reverse_nodes_K_group:
 Runtime: 24 ms, faster than 55.47% of C++ online submissions for Reverse Nodes in k-Group.
 Memory Usage: 11.3 MB, less than 6.45% of C++ online submissions for Reverse Nodes in k-Group
+
+substring_with_concatenation_all_words:
+Runtime: 768 ms, faster than 14.45% of C++ online submissions for Substring with Concatenation of All Words.
+Memory Usage: 394.1 MB, less than 8.70% of C++ online submissions for Substring with Concatenation of All Words.
