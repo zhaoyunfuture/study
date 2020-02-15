@@ -7,4 +7,8 @@ Memory Usage: 11.3 MB, less than 6.45% of C++ online submissions for Reverse Nod
 
 substring_with_concatenation_all_words:
 Runtime: 768 ms, faster than 14.45% of C++ online submissions for Substring with Concatenation of All Words.
-Memory Usage: 394.1 MB, less than 8.70% of C++ online submissions for Substring with Concatenation of All Words.
+Memory Usage: 394.1 MB, less than 8.70% of C++ online submissions for Substring with Concatenation of All Words
+
+longest_valid_parentheses:
+Runtime: 712 ms, faster than 5.03% of C++ online submissions for Longest Valid Parentheses.
+Memory Usage: 374.9 MB, less than 7.14% of C++ online submissions for Longest Valid Parentheses..
