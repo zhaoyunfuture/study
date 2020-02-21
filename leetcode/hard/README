@@ -23,3 +23,7 @@ Memory Usage: 8.9 MB, less than 24.00% of C++ online submissions for First Missi
 trapping_rain_water:
 Runtime: 16 ms, faster than 10.59% of C++ online submissions for Trapping Rain Water.
 Memory Usage: 9.3 MB, less than 60%% of C++ online submissions for Trapping Rain Water.
+
+insert_interval:
+Runtime: 12 ms, faster than 97.38% of C++ online submissions for Insert Interval.
+Memory Usage: 12.8 MB, less than 20.00% of C++ online submissions for Insert Interval.
