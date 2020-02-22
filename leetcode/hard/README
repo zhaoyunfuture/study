@@ -27,3 +27,6 @@ Memory Usage: 9.3 MB, less than 60%% of C++ online submissions for Trapping Rain
 insert_interval:
 Runtime: 12 ms, faster than 97.38% of C++ online submissions for Insert Interval.
 Memory Usage: 12.8 MB, less than 20.00% of C++ online submissions for Insert Interval.
+
+jump_game_II:
+91 / 92 test cases passed. the last case is super case and Time Limit Exceeded...
