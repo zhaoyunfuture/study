@@ -30,3 +30,7 @@ Memory Usage: 12.8 MB, less than 20.00% of C++ online submissions for Insert Int
 
 jump_game_II:
 91 / 92 test cases passed. the last case is super case and Time Limit Exceeded...
+
+text_justification:
+Runtime: 0 ms, faster than 100.00% of C++ online submissions for Text Justification.
+Memory Usage: 9.1 MB, less than 100.00% of C++ online submissions for Text Justification.
