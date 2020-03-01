@@ -34,3 +34,6 @@ jump_game_II:
 text_justification:
 Runtime: 0 ms, faster than 100.00% of C++ online submissions for Text Justification.
 Memory Usage: 9.1 MB, less than 100.00% of C++ online submissions for Text Justification.
+
+min_window_substr:
+267 / 268 test cases passed. the last case is super case and Time Limit Exceeded...
