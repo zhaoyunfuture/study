@@ -41,3 +41,6 @@ min_window_substr:
 largest-rectangle-in-histogram:
 Runtime: 300 ms, faster than 9.55% of C++ online submissions for Largest Rectangle in Histogram.
 Memory Usage: 9 MB, less than 100.00% of C++ online submissions for Largest Rectangle in Histogram.
+
+max_rectangle:
+63 / 66 test cases passed. Time Limit Exceeded
