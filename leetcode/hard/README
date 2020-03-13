@@ -47,3 +47,6 @@ max_rectangle:
 
 interleave_string:
 89 / 101 test cases passed.Time Limit Exceeded
+
+distinct_subsequences:
+54 / 63 test cases passed. Time Limit Exceeded 
