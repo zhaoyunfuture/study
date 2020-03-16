@@ -38,7 +38,7 @@ Memory Usage: 9.1 MB, less than 100.00% of C++ online submissions for Text Justi
 min_window_substr:
 267 / 268 test cases passed. the last case is super case and Time Limit Exceeded...
 
-largest-rectangle-in-histogram:
+largesy-rectangle-in-histogram:
 Runtime: 300 ms, faster than 9.55% of C++ online submissions for Largest Rectangle in Histogram.
 Memory Usage: 9 MB, less than 100.00% of C++ online submissions for Largest Rectangle in Histogram.
 
@@ -57,3 +57,7 @@ best_time_buy_sell_stock_III
 longest_consecutive_sequence:
 Runtime: 4 ms, faster than 99.82% of C++ online submissions for Longest Consecutive Sequence.
 Memory Usage: 8.3 MB, less than 100.00% of C++ online submissions for Longest Consecutive Sequence.
+
+candy:
+Runtime: 32 ms, faster than 29.57% of C++ online submissions for Candy.
+Memory Usage: 10.7 MB, less than 23.08% of C++ online submissions for Candy.
