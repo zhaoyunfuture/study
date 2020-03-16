@@ -53,3 +53,7 @@ distinct_subsequences:
 
 best_time_buy_sell_stock_III
 192 / 200 test cases passed. wrong answer
+
+longest_consecutive_sequence:
+Runtime: 4 ms, faster than 99.82% of C++ online submissions for Longest Consecutive Sequence.
+Memory Usage: 8.3 MB, less than 100.00% of C++ online submissions for Longest Consecutive Sequence.
