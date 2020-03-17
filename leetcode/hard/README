@@ -65,3 +65,6 @@ Memory Usage: 10.7 MB, less than 23.08% of C++ online submissions for Candy.
 sliding_window_max:
 Runtime: 80 ms, faster than 25.50% of C++ online submissions for Sliding Window Maximum.
 Memory Usage: 17.1 MB, less than 14.76% of C++ online submissions for Sliding Window Maximum.
+
+dungeon_game:
+41 / 45 test cases passed. Time Limit Exceeded
