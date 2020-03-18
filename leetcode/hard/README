@@ -68,3 +68,7 @@ Memory Usage: 17.1 MB, less than 14.76% of C++ online submissions for Sliding Wi
 
 dungeon_game:
 41 / 45 test cases passed. Time Limit Exceeded
+
+basic_cal:
+Runtime: 36 ms, faster than 24.29% of C++ online submissions for Basic Calculator.
+Memory Usage: 16.4 MB, less than 19.05% of C++ online submissions for Basic Calculator.
