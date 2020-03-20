@@ -9,7 +9,9 @@ bool flag = false;
 int initial=0;
 int index=1;
 vector<string> vv;
-
+int row=2;
+int currLen = 6;
+int lastindex=1;
 void clearConsole()
 {
     system("clear");
@@ -35,17 +37,61 @@ void drawvv(vector<string>& vv)
         cout << vv.at(i) << endl;
     }
 }
+void runvv(vector<string>& vv)
+{
+    clearConsole();
+    string line;
+    string original="|                               |";
+    for(int i=0;i<currLen;i++)
+        line.push_back('_');
+    int len = vv.at(0).size();
+    if(index+line.length()+1>len)
+        index=1;
+    original.replace(index,line.length(),line);
+    vv.at(vv.size()-row) = original;
+    index++;
+    drawvv(vv);
+}
+
+void drawoneline()
+{
+    string line;
+    string original="|                               |";
+    for(int i=0;i<currLen;i++)
+        line.push_back('_');
+    int len = vv.at(0).size();
+    original.replace(index-1,line.length(),line);
+    vv.at(vv.size()-row) = original;
+}
 
 void processvv(vector<string>& vv)
 {
-    string line="____";
-    string original="|                               |";
-    int len = vv.at(0).size();
-    if(index+5>len)
-        index=1;
-    original.replace(index,4,line);
-    vv.at(vv.size()-2) = original;
-    index++;
+    if(row==2){
+        lastindex = index;
+        row++;
+        return;
+    }
+    if(row<6){
+        if(index<lastindex){
+            if(lastindex-index>currLen)
+                vv.at(1) = "|        game over              |";
+            else{
+                currLen -= lastindex-index;
+                index=lastindex; 
+                drawoneline();
+                row++;
+            }
+        }else{
+            if(index-lastindex>currLen)
+                vv.at(1) = "|        game over              |";
+            else{
+                currLen -= index-lastindex;
+                drawoneline();
+                row++;
+            }
+        }
+    }
+    return;
 }
 
 void draw()
@@ -71,13 +117,14 @@ void foo()
 {
     init(vv);
     while(true){
-        if(!flag){
+        if(flag){
             clearConsole();
-            //draw();
             processvv(vv);
             drawvv(vv);
+            flag = false;
         }
-        usleep(500000);
+        runvv(vv);
+        usleep(100000);
     }
 }
 
