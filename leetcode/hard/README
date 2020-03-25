@@ -72,3 +72,7 @@ dungeon_game:
 basic_cal:
 Runtime: 36 ms, faster than 24.29% of C++ online submissions for Basic Calculator.
 Memory Usage: 16.4 MB, less than 19.05% of C++ online submissions for Basic Calculator.
+
+frog_jump:
+Runtime: 8 ms, faster than 98.41% of C++ online submissions for Frog Jump.
+Memory Usage: 6.7 MB, less than 100.00% of C++ online submissions for Frog Jump.

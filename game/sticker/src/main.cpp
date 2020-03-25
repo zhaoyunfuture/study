@@ -4,7 +4,8 @@
 #include <unistd.h>       // sleep
 #include <vector>
 using namespace std; 
-
+string game_over = "|        game over              |";
+string you_win   = "|        you win!!              |";
 bool flag = false;
 int initial=0;
 int index=1;
@@ -12,6 +13,7 @@ vector<string> vv;
 int row=2;
 int currLen = 6;
 int lastindex=1;
+int speed=100000;
 void clearConsole()
 {
     system("clear");
@@ -42,6 +44,7 @@ void runvv(vector<string>& vv)
     clearConsole();
     string line;
     string original="|                               |";
+    if(row<8){
     for(int i=0;i<currLen;i++)
         line.push_back('_');
     int len = vv.at(0).size();
@@ -50,6 +53,7 @@ void runvv(vector<string>& vv)
     original.replace(index,line.length(),line);
     vv.at(vv.size()-row) = original;
     index++;
+    }
     drawvv(vv);
 }
 
@@ -71,10 +75,10 @@ void processvv(vector<string>& vv)
         row++;
         return;
     }
-    if(row<6){
+    if(row<8){
         if(index<lastindex){
             if(lastindex-index>currLen)
-                vv.at(1) = "|        game over              |";
+                vv.at(1) = game_over;
             else{
                 currLen -= lastindex-index;
                 index=lastindex; 
@@ -83,37 +87,20 @@ void processvv(vector<string>& vv)
             }
         }else{
             if(index-lastindex>currLen)
-                vv.at(1) = "|        game over              |";
+                vv.at(1) = game_over;
             else{
                 currLen -= index-lastindex;
                 drawoneline();
                 row++;
             }
         }
+        return;
     }
-    return;
+    if(row==8)
+        vv.at(1) = you_win;
 }
 
-void draw()
-{
-    initial++;
-    if( initial>25)
-        initial=1;
-    for(int i=0;i<initial;i++){
-        cout << " ";
-    }
-    cout << "O" << endl;
-    for(int i=0;i<initial-1;i++){
-        cout << " ";
-    }
-    cout << "\/|\\"<<endl;
-    for(int i=0;i<initial;i++){
-        cout << " ";
-    }
-    cout << "|\\"<<endl;
-}
-
-void foo() 
+void play() 
 {
     init(vv);
     while(true){
@@ -124,7 +111,7 @@ void foo()
             flag = false;
         }
         runvv(vv);
-        usleep(100000);
+        usleep(speed);
     }
 }
 
@@ -132,17 +119,36 @@ void press()
 {
     while(true){
         char inputmenu;
+        cout << "\n\n"
+            << "MENU\n\n"
+            << "1: easy\n"
+            << "2: medium\n"
+            << "3: hard\n"
+            << "4: quit\n\n\n"
+            << "Input: ";
         cin >> inputmenu;
-        if(inputmenu == 'a')
-            flag = true;
-        else if(inputmenu == 'b')
-            flag = false;
+        switch (inputmenu){
+            case '1': currLen=7;
+                      speed=150000;
+                      break;
+            case '2': currLen=6;
+                      speed=100000;
+                      break;
+            case '3': currLen=5;
+                      speed=80000;
+                      break;
+            case 'a': flag = true;break;
+            case 'b': flag = false;break;
+            case '4':
+            case 'q':
+            default : break;
+        }
     }
 }
 
 int main() 
 {
-    std::thread first (foo);     // spawn new thread that calls foo()
+    std::thread first (play);     // spawn new thread that calls foo()
     std::thread second (press);  // spawn new thread that calls bar(0)
 
     first.join();                // pauses until first finishes

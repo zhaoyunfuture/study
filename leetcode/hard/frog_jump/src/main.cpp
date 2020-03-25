@@ -15,7 +15,9 @@ public:
         }
         int t = diff.at(index);
         while(t<move){
-            t += diff.at(++index);
+            if(++index==diff.size())
+                break;
+            t += diff.at(index);
         }
         if(t==move){
             nextindex = index;
@@ -73,9 +75,9 @@ public:
         if(diff.at(diff.size()-1)>sum)
             return false;
 
-        if(jump(diff,0,1))
+        if(jump(diff,1,1))
             return true;
-        if(jump(diff,0,2))
+        if(jump(diff,1,2))
             return true;
         return false; 
     }
@@ -84,10 +86,11 @@ public:
 int main(int argc, char* argv[])
 {
     Solution s;
+    int vv[] = {0,1,3,6,7};
     //int vv[] = {0,1,3,5,6,8,12,17};
-    int vv[] = {0,1,2,3,4,8,9,11};
+    //int vv[] = {0,1,2,3,4,8,9,11};
     vector<int> v (vv,vv+sizeof(vv)/sizeof(int));
-    cout << s.canCross(v);
+    cout << s.canCross(v)<< endl;
 	return 0;
 }
 
