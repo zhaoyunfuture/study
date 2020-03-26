@@ -76,3 +76,13 @@ Memory Usage: 16.4 MB, less than 19.05% of C++ online submissions for Basic Calc
 frog_jump:
 Runtime: 8 ms, faster than 98.41% of C++ online submissions for Frog Jump.
 Memory Usage: 6.7 MB, less than 100.00% of C++ online submissions for Frog Jump.
+
+zuma_game:
+27 / 28 test cases passed.
+Input:
+"RRWWRRBBRR"
+"WB"
+RRWWRRBBRR -> RRWWRRBBR[W]R -> RRWWRRBB[B]RWR -> RRWWRRRWR -> RRWWWR -> RRR -> empty
+so my alg should be update to cover this case!!!!
+
+

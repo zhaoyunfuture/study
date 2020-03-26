@@ -3,12 +3,89 @@
 #include <vector>
 #include <iostream>
 using namespace std;
-typedef struct{
-    char c;
-    int idx;
-}T_ball_idx;
+
+#if 0
+//for leetcode compile error : single usr vector instead of array
+int step(string board, string hand){
+        if(board.empty())
+            return hand.length();
+        if(hand.empty())
+            return -1;
+        vector<T_ball_idx> twoball;
+        findtwoball(board,twoball);
+        if(twoball.size()==0){
+            vector<int> res;
+            for(int i=0;i<board.length();i++){
+                string b;
+                string t;
+                string h;
+                if(has(hand,board.at(i),h,2)){
+                    t = board;
+                    t.erase(t.begin()+i);
+                    b = t;
+                    res.push_back(step(b,h));
+                }else{
+                    res.push_back(-1);
+                }
+            }
+            int max=-1;
+            for(int i=0;i<res.size();i++){
+                if(res.at(i)>max)
+                    max = res.at(i);
+            }
+            return max;
+        }else{
+            vector<int> res;
+            vector<int> single;
+            for(int i=0;i<board.length();i++){
+                single.push_back(0);
+            }
+            
+            for(int i=0;i<twoball.size();i++){
+                string b=board;
+                string h;
+                string n;
+                single.at(twoball.at(i).idx) = 1;
+                single.at(twoball.at(i).idx-1) = 1;
+                if(has(hand,twoball.at(i).c,h,1)){
+                    b.insert(b.begin()+twoball.at(i).idx,twoball.at(i).c); 
+                    n = process(b);
+                    res.push_back(step(n,h));
+                }else{
+                    res.push_back(-1);
+                }
+            }
+            for(int i=0;i<board.length();i++){
+                if(single.at(i)==0){
+                    string b;
+                    string t;
+                    string h;
+                    if(has(hand,board.at(i),h,2)){
+                        t = board;
+                        t.erase(t.begin()+i);
+                        b = t;
+                        res.push_back(step(b,h));
+                    }else{
+                        res.push_back(-1);
+                    }
+                }
+            }
+            int max=-1;
+            for(int i=0;i<res.size();i++){
+                if(res.at(i)>max)
+                    max = res.at(i);
+            }
+            return max;
+        }
+    }
+#endif
+
 class Solution {
 public:
+    typedef struct{
+        char c;
+        int idx;
+    }T_ball_idx;
     string process(string board){
         if(board.empty())
             return board;
@@ -77,10 +154,106 @@ public:
             }
         }
     }
+
+    bool has(string hand,char c,string& newhand,int oneortwo){
+        int len = hand.length();
+        if(len<oneortwo)
+            return false;
+        int cont=0;
+        for(int i=0;i<len;i++){
+            if(hand.at(i)==c){
+                cont++;
+                if(cont>oneortwo)
+                    newhand.push_back(hand.at(i));
+            }else{
+                newhand.push_back(hand.at(i));
+            }
+        }
+        if(cont>=oneortwo)
+            return true;
+        else
+            return false;
+    }
+    int step(string board, string hand){
+        if(board.empty())
+            return hand.length();
+        if(hand.empty())
+            return -1;
+        vector<T_ball_idx> twoball;
+        findtwoball(board,twoball);
+        if(twoball.size()==0){
+            vector<int> res;
+            for(int i=0;i<board.length();i++){
+                string b;
+                string t;
+                string h;
+                if(has(hand,board.at(i),h,2)){
+                    t = board;
+                    t.erase(t.begin()+i);
+                    b = t;
+                    res.push_back(step(b,h));
+                }else{
+                    res.push_back(-1);
+                }
+            }
+            int max=-1;
+            for(int i=0;i<res.size();i++){
+                if(res.at(i)>max)
+                    max = res.at(i);
+            }
+            return max;
+        }else{
+            vector<int> res;
+            int single[board.length()] = {0};
+            for(int i=0;i<twoball.size();i++){
+                string b=board;
+                string h;
+                string n;
+                single[twoball.at(i).idx] = 1;
+                single[twoball.at(i).idx-1] = 1;
+                if(has(hand,twoball.at(i).c,h,1)){
+                    b.insert(b.begin()+twoball.at(i).idx,twoball.at(i).c); 
+                    n = process(b);
+                    res.push_back(step(n,h));
+                }else{
+                    res.push_back(-1);
+                }
+            }
+            for(int i=0;i<board.length();i++){
+                if(single[i]==0){
+                    string b;
+                    string t;
+                    string h;
+                    if(has(hand,board.at(i),h,2)){
+                        t = board;
+                        t.erase(t.begin()+i);
+                        b = t;
+                        res.push_back(step(b,h));
+                    }else{
+                        res.push_back(-1);
+                    }
+                }
+            }
+            int max=-1;
+            for(int i=0;i<res.size();i++){
+                if(res.at(i)>max)
+                    max = res.at(i);
+            }
+            return max;
+        }
+    }
+    int findMinStep(string board, string hand) {
+        int out = step(board,hand);
+        if(out==-1)
+            return -1;
+        else
+            return hand.length()-out;
+    }
 };
 int main(int argc, char* argv[])
 {
     Solution s;
+#if 0
     int i;
     int len;
     string ss="WWBGGGBBWBBB";
@@ -89,8 +262,23 @@ int main(int argc, char* argv[])
     cout << i<<endl;
     cout << len<<endl;
     cout << s.process(ss)<<endl;
-    vector<T_ball_idx> twoball;
-    s.findtwoball(sss,twoball);
+    string has = "GBWBB";
+    string out;
+    string out1;
+    cout << s.has(has,'B',out,2) << endl;
+    cout<< out<< endl;
+    cout << s.has(has,'B',out1,1) << endl;
+    cout<< out1<< endl;
+    string tt="abcde";
+    tt.insert(tt.begin()+0,'F');
+    cout << tt << endl;
+    string board = "GGBBWWB";
+    string hand = "GBWWB";
+    cout<< s.step(board,hand) << endl;
+#endif
+    string board = "WWGWGW";
+    string hand = "GWBWR";
+    cout << s.findMinStep(board,hand) << endl;
 	return 0;
 }
 
