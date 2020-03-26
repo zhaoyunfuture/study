@@ -1,7 +1,12 @@
 #include <string.h>
 #include <string>
+#include <vector>
 #include <iostream>
 using namespace std;
+typedef struct{
+    char c;
+    int idx;
+}T_ball_idx;
 class Solution {
 public:
     string process(string board){
@@ -56,6 +61,22 @@ public:
         }
         return false;        
     }
+    void findtwoball(string board,vector<T_ball_idx>& twoball){
+        int len = board.length();
+        if(len<2)
+            return;
+        char c=board.at(0);
+        T_ball_idx data;
+        for(int i=1;i<len;i++){
+            if(c==board.at(i)){
+                data.c = c;
+                data.idx = i;
+                twoball.push_back(data);
+            }else{
+                c = board.at(i);
+            }
+        }
+    }
 };
 int main(int argc, char* argv[])
 {
@@ -63,10 +84,13 @@ int main(int argc, char* argv[])
     int i;
     int len;
     string ss="WWBGGGBBWBBB";
+    string sss="WWBGGBBWBB";
     cout <<s.find(ss,i,len)<<endl;
     cout << i<<endl;
     cout << len<<endl;
     cout << s.process(ss)<<endl;
+    vector<T_ball_idx> twoball;
+    s.findtwoball(sss,twoball);
 	return 0;
 }
 
