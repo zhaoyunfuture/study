@@ -15,7 +15,7 @@ public:
     struct classcomp {
         bool operator() (const T_info& lhs, const T_info& rhs) const
         { 
-            if(lhs.hit!=rhs.hit){
+            if(lhs.hit==rhs.hit){
                 return lhs.stamp<rhs.stamp;
             }
             return lhs.hit<rhs.hit;
@@ -53,6 +53,8 @@ public:
     }
     void put(int key, int value) {
         int size = kv.size();
+        if(cap==0)
+            return;
         if(size<cap){
             kv_iter = kv.find(key);
             if(kv_iter == kv.end()){
