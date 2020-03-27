@@ -85,4 +85,6 @@ Input:
 RRWWRRBBRR -> RRWWRRBBR[W]R -> RRWWRRBB[B]RWR -> RRWWRRRWR -> RRWWWR -> RRR -> empty
 so my alg should be update to cover this case!!!!
 
-
+lfu_cache:
+Runtime: 224 ms, faster than 5.99% of C++ online submissions for LFU Cache.
+Memory Usage: 38.6 MB, less than 81.82% of C++ online submissions for LFU Cache.
