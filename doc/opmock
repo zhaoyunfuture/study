@@ -1,0 +1,8 @@
+1. svn download the opmock
+https://sourceforge.net/p/opmock/code/HEAD/tree/
+2. do with opmock-code/trunk/opmock1/README.txt
+ 2.1 maven (change pom.xml 1.5->1.6)
+   rename opmock.jar
+ 2.2 swig
+   update opmock.sh swig path
+3. update Makefile in opmock
