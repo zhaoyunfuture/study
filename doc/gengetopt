@@ -1,0 +1,26 @@
+apt-get install gengetopt
+
+//cmdline.ggo content
+package "jacob"
+
+option "console" - "Use calling console as trace and debug interface" flag off
+option "pty" p "Name of symlink to controlling tty" string default="tty1_ext" optional argoptional
+option "json" j "Path to json configuration file" string optional
+option "app-name" a "Name for application" string optional
+option "app-instance" i "Instance id for application" string optional
+option "debug" - "Start all log modules with YLOG_DEBUG level, debug output will go to console" flag off
+option "cmd-file" - "Path to TND init comand file" string optional
+option "tnd-client" - "Start TND client on yipc connection" string default="ytnd_ipc" optional argoptional
+
+//Makefile
+GENGETOPT=/usr/bin/gengetopt
+
+define GENGETOPT_RULE
+$(eval GGO_BASENAME := $(basename $(notdir $1)))
+
+$2/$(GGO_BASENAME).h: $1
+    @echo "$$(DATE) Generating $$(B)$2/$(GGO_BASENAME).{h,c}$${N} with gengetopt"
+    "$(GENGETOPT)" -e --file-name=$(GGO_BASENAME) --func-name=$(GGO_BASENAME)_parser --output-dir=$2 -i $1
+endef
+
+$(eval $(call GENGETOPT_RULE,cmdline.ggo,./))
