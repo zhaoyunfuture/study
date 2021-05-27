@@ -2,6 +2,10 @@
 1. CPU Num, memory cache, bridge mode
 2. add 96proxy to /etc/apt/apt.conf.d
 3. sudo mount -t vboxsf share /mnt/share
+    VBoxManage setextradata YOURVMNAME VBoxInternal2/SharedFoldersEnableSymlinksCreate/YOURSHAREFOLDERNAME 1  
+    其中：YOURVMNAME为虚拟机中ubuntu系统的名称
+    YOURSHAREFOLDERNAME 为共享的目录在Vbox上的名称，而不是linux里面共享目录的名称
+    VBoxManage getextradata YOURVMNAME enumerate
 
 //settings
 1. root password: sudo passwd
