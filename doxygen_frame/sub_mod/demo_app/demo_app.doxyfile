@@ -1,0 +1,9 @@
+@INCLUDE = sub_mod/comm.doxyfile
+
+PROJECT_BRIEF = "demo app"
+
+OUTPUT_DIRECTORY = output/demo_app
+
+INPUT = sub_mod/demo_app/main.hpp
+
+#FILE_PATTERNS = *.h *.cpp
