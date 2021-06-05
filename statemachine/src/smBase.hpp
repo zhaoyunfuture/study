@@ -15,7 +15,7 @@ typedef enum _sm_ret{
 
 typedef enum _sm_state{
     E_SM_TEST_ONE = 0,
-    E_SM_TEST_TWO = 0,
+    E_SM_TEST_TWO,
     E_SM_END
 }E_SM_STATE;
 
@@ -29,14 +29,15 @@ typedef E_SM_STATE (*SM_FUNC) ();
 
 class smBase {
     public:
-        smBase(){}
+        smBase(){
+            m_state = E_SM_END;
+        }
         virtual ~smBase(){}
 
         virtual E_SM_RET enter(E_SM_EVENT event){ 
             cout << "enter " << getSmName()<< " ,with event: " << event <<endl;
             setCurEvent(event);
-            run();
-            return E_SM_OK;
+            return run();
         }
         virtual E_SM_RET run() {
             cout << "run " << getSmName()<< endl;

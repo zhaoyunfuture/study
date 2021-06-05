@@ -25,7 +25,10 @@ class smTestOne :public smBase {
             cout << "m_state " << m_state << endl;
             if(E_SM_TEST_TWO == m_state){
                 std::shared_ptr<smBase> smtwo(new smTestTwo);
-                smtwo->enter(E_SM_START);
+                return smtwo->enter(E_SM_START);
+            }
+            if(E_SM_END == m_state){
+                cout << "all finished" << endl;
             }
             return E_SM_OK;
         }
