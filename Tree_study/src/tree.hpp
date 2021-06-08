@@ -4,6 +4,7 @@
 #include <string.h>
 #include <string>
 #include <iostream>
+#include <vector>
 
 struct node {
     int val;
@@ -28,7 +29,24 @@ void dump_LDR(node* root){
 
 }
 
+int heightOfTree(node* root){
+    int l,r;
+    if(!root)
+        return 0;
+    l = heightOfTree(root->ln) + 1;
+    r = heightOfTree(root->rn) + 1;
+    
+    return l>r?l:r;
+}
 
+void dumpTreeView(node* root){
+    int h = heightOfTree(root);
+    std::vector<std::string> tv;
+    if(0 == h)
+        return;
+    
+
+}
 /*! 
  *@brief BST (binary sort tree)
  *
