@@ -6,6 +6,10 @@
 #include <iostream>
 #include <vector>
 
+/*! 
+ *@brief node type 
+ *
+ */
 struct node {
     int val;
     node* ln;
@@ -29,6 +33,27 @@ void dump_LDR(node* root){
 
 }
 
+/*! 
+  *@brief dump tree in human view 
+  *
+  */
+std::string formatStr(int level, bool isFarLeft){
+    std::string str;
+    if(0 == level)
+        return str;
+
+    int cnt = 1<<(level-1);
+    
+    if(isFarLeft)
+        cnt /= 2; 
+    
+    for(int i=0; i<cnt; i++){
+        str.append(" ");
+    }
+
+    return str;
+}
+
 int heightOfTree(node* root){
     int l,r;
     if(!root)
@@ -39,14 +64,25 @@ int heightOfTree(node* root){
     return l>r?l:r;
 }
 
-void dumpTreeView(node* root){
-    int h = heightOfTree(root);
-    std::vector<std::string> tv;
+void dumpTreeView(node* root,int cur,int h,bool farleft,std::vector<std::string>& tv){
     if(0 == h)
         return;
-    
+    int c = cur;
+    std::string str;
+    str = formatStr(h-cur,farleft);
+    if(root){
+        str.append(std::to_string(root->val));
+    }else{
+        str.append(" ");
+    }
+    tv.at(cur).append(str);
+    if(!root)
+        return;
+    dumpTreeView(root->ln, c+1, h, true&&farleft, tv);
+    dumpTreeView(root->rn, c+1, h, false&&farleft, tv);
 
 }
+
 /*! 
  *@brief BST (binary sort tree)
  *

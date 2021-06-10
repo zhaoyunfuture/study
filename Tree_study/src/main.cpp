@@ -13,7 +13,7 @@ int main(int argc, char* argv[])
     root->ln = NULL;
     root->rn = NULL;
     for(int i=0;i<8;i++){
-        if(i != 5)
+        if(i != 4)
             root = insert_bst(root,i);
     }
     
@@ -26,6 +26,17 @@ int main(int argc, char* argv[])
 	dump_LDR(q);
     cout << endl;
     cout << "heightOfTree " << heightOfTree(q) << endl;
+    
+    std::string s;
+    std::vector<std::string> tv;
+    //init tv
+    for(int i=0;i<=heightOfTree(q);i++){
+        tv.push_back(s);
+    }
+    dumpTreeView(q,0,heightOfTree(q),true,tv);
+    for(int i=0;i<=heightOfTree(q);i++){
+        cout << tv.at(i) << endl;
+    }
     return 0;
 }
 
