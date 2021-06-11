@@ -47,7 +47,7 @@ std::string formatStr(int level, bool isFarLeft){
     if(isFarLeft)
         cnt /= 2; 
     
-    for(int i=0; i<cnt; i++){
+    for(int i=0; i<=cnt; i++){
         str.append(" ");
     }
 
@@ -69,20 +69,43 @@ void dumpTreeView(node* root,int cur,int h,bool farleft,std::vector<std::string>
         return;
     int c = cur;
     std::string str;
-    str = formatStr(h-cur,farleft);
+    str = formatStr(h-cur, farleft);
     if(root){
         str.append(std::to_string(root->val));
     }else{
-        str.append(" ");
+        if(cur != h)
+            str.append("x");
     }
     tv.at(cur).append(str);
-    if(!root)
+    if(!root){
+        if(cur == h || cur+1 == h)
+            return;
+        if(farleft)
+            tv.at(cur+1).append("x x");
+        else
+            tv.at(cur+1).append(" x x");
         return;
+    }
     dumpTreeView(root->ln, c+1, h, true&&farleft, tv);
     dumpTreeView(root->rn, c+1, h, false&&farleft, tv);
 
 }
 
+void dumpTV(node* root){
+    //init tv
+    std::vector<std::string> tv;
+    std::string s;
+    for(int i=0; i<=heightOfTree(root); i++){
+        tv.push_back(s);
+    }
+
+    dumpTreeView(root, 0, heightOfTree(root), true, tv);
+
+    for(int i=0; i<=heightOfTree(root); i++)
+        std::cout << tv.at(i) << std::endl;
+
+    return;
+}
 /*! 
  *@brief BST (binary sort tree)
  *

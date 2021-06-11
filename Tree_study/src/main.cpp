@@ -27,16 +27,7 @@ int main(int argc, char* argv[])
     cout << endl;
     cout << "heightOfTree " << heightOfTree(q) << endl;
     
-    std::string s;
-    std::vector<std::string> tv;
-    //init tv
-    for(int i=0;i<=heightOfTree(q);i++){
-        tv.push_back(s);
-    }
-    dumpTreeView(q,0,heightOfTree(q),true,tv);
-    for(int i=0;i<=heightOfTree(q);i++){
-        cout << tv.at(i) << endl;
-    }
+    dumpTV(q); 
     return 0;
 }
 
