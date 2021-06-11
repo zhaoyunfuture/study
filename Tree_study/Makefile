@@ -1,7 +1,7 @@
 CC := cc
 LD := cc
 
-CFLAGS  += -g -I./include  -Wall -fexceptions -std=c++11
+CFLAGS  += -g -I./include  -I./src -Wall -fexceptions -std=c++11
 LDFLAGS += -lstdc++  
  
 BINARY_PATH ?= out

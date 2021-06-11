@@ -28,6 +28,11 @@ int main(int argc, char* argv[])
     cout << "heightOfTree " << heightOfTree(q) << endl;
     
     dumpTV(q); 
+    
+    int a = 1;
+    AVLTree<int> avl;
+    avl.insert(a);
+    avl.traversal();
     return 0;
 }
 
