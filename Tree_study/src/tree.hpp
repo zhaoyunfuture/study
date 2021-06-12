@@ -86,8 +86,75 @@ class AVLTree
             }
 
         }
-        //TreeNode<T>* findpri(TreeNode<T>* node,T x);
-        //void Deletepri(TreeNode<T>* &node,T x);
+        TreeNode<T>* findpri(TreeNode<T>* node,T x){
+            if(node==NULL)
+            {
+                return NULL;
+            }
+            if(node->data > x)
+            {
+                return findpri(node->ln,x);
+            }
+            else if(node->data < x)
+            {
+                return findpri(node->rn,x);
+            }
+            else return node;
+        }
+
+        void Deletepri(TreeNode<T>* &node, TreeNode<T>* pNode, T x){
+            if(node==NULL) return ;
+            if(x < node->data)
+            {
+                Deletepri(node->ln, node, x);
+                if(2 == height(node->rn)-height(node->ln)){
+                    if(node->rn->ln != NULL && (height(node->rn->ln)>height(node->rn->rn)) )
+                        DoubleRotateRL(node, pNode);
+                    else
+                        SingRotateRight(node, pNode);
+                }
+            }
+            else if(x > node->data)
+            {
+                Deletepri(node->rn, node, x);
+                if(2 == height(node->ln)-height(node->rn)){
+                    if(node->ln->rn != NULL && (height(node->ln->rn)>height(node->ln->ln) ))
+                        DoubleRotateLR(node, pNode);
+                    else
+                        SingRotateLeft(node, pNode);
+                }
+            }
+            else
+            {
+                if(node->ln && node->rn)
+                {
+                    TreeNode<T>* temp = node->rn;
+                    while(temp->ln!=NULL) temp=temp->ln;
+                    node->data=temp->data;
+                    Deletepri(node->rn, node, temp->data);
+                    if(2 == height(node->ln)-height(node->rn))
+                    {
+                        if(node->ln->rn!=NULL&& (height(node->ln->rn)>height(node->ln->ln) ))
+                            DoubleRotateLR(node, pNode);
+                        else
+                            SingRotateLeft(node, pNode);
+                    }
+                }
+                else
+                {
+                    TreeNode<T>* temp = node;
+                    if(node->ln == NULL)
+                        node = node->rn;
+                    else if(node->rn == NULL)
+                        node = node->ln;
+                    delete(temp);
+                    temp=NULL;
+                }
+            }
+            if(node == NULL) return;
+            return;
+        }
+
         int height(TreeNode<T>* node){
             int l,r;
             if(!node)
@@ -97,6 +164,7 @@ class AVLTree
 
             return l>r?l:r;
         }
+
         void SingRotateLeft(TreeNode<T>* &k2, TreeNode<T>* &pk2){
             TreeNode<T>* k1;
             k1=k2->ln;
@@ -109,6 +177,7 @@ class AVLTree
                 pk2->ln = k1;
             }
         }
+
         void SingRotateRight(TreeNode<T>* &k2, TreeNode<T>* &pk2){
             TreeNode<T>* k1;
             k1=k2->rn;
@@ -121,15 +190,17 @@ class AVLTree
                 pk2->rn = k1;
             }
         }
+
         void DoubleRotateLR(TreeNode<T>* &k3, TreeNode<T>* &pk3){
             SingRotateRight(k3->ln, pk3);
             SingRotateLeft(k3, pk3);
         }
+
         void DoubleRotateRL(TreeNode<T>* &k3, TreeNode<T>* &pk3){
             SingRotateLeft(k3->rn, pk3);
             SingRotateRight(k3, pk3);
         }
-        //int Max(int cmpa,int cmpb);
+        
         std::string formatStr(int level, bool isFarLeft){
             std::string str;
             if(0 == level)
@@ -143,7 +214,6 @@ class AVLTree
             for(int i=0; i<=cnt; i++){
                 str.append(" ");
             }
-
             return str;
         }
 
@@ -178,8 +248,13 @@ class AVLTree
         void insert(T x){
             insertpri(root,NULL,x);
         }
-        //TreeNode<T>* find(T x);
-        //void Delete(T x);
+        TreeNode<T>* find(T x){
+            return findpri(root,x);
+        }
+        
+        void Delete(T x){
+            Deletepri(root, NULL, x);
+        }
         void traversal() {
             dump_LDR(root);
             std::cout << std::endl;
@@ -207,10 +282,7 @@ class AVLTree
 
             for(int i=0; i<=height(root); i++)
                 std::cout << tv.at(i) << std::endl;
-
-            return;
         }
-
 };
-#endif
 
+#endif

@@ -34,6 +34,10 @@ int main(int argc, char* argv[])
         avl.insert(i);
     avl.traversal();
     avl.dumpTV();
+    cout << avl.find(3) << endl;
+
+    avl.Delete(3);
+    avl.dumpTV();
     return 0;
 }
 
