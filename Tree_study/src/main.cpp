@@ -29,10 +29,12 @@ int main(int argc, char* argv[])
     
     dumpTV(q); 
     
-    int a = 1;
+    //int a = 1;
     AVLTree<int> avl;
-    avl.insert(a);
+    for(int i=1; i<10; i++)
+        avl.insert(i);
     avl.traversal();
+    avl.dumpTV();
     return 0;
 }
 

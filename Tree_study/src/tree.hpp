@@ -46,9 +46,8 @@ template<class T>
 class TreeNode
 {
     public:
-        TreeNode():ln(NULL),rn(NULL),hgt(0){}
+        TreeNode():ln(NULL),rn(NULL){}
         T data;
-        int hgt;
         TreeNode* ln;
         TreeNode* rn;
 };
@@ -58,22 +57,165 @@ class AVLTree
 {
     private:
         TreeNode<T>* root;
-        void insertpri(TreeNode<T>* &node,T x);
+        void insertpri(TreeNode<T>* &node, TreeNode<T>* pNode, T x){
+            if(node==NULL)
+            {
+                node=new TreeNode<T>();
+                node->data=x;
+                return;
+            }
+            if(node->data > x)
+            {
+                insertpri(node->ln, node, x);
+                if(2 == height(node->ln)-height(node->rn)) {
+                    if(x < node->ln->data)
+                        SingRotateLeft(node, pNode);
+                    else
+                        DoubleRotateLR(node, pNode);
+                }
+            }
+            else if(node->data < x)
+            {
+                insertpri(node->rn, node, x);
+                if(2 == height(node->rn)-height(node->ln)) {
+                    if(x > node->rn->data)
+                        SingRotateRight(node, pNode);
+                    else
+                        DoubleRotateRL(node, pNode);
+                }
+            }
+
+        }
         //TreeNode<T>* findpri(TreeNode<T>* node,T x);
         //void Deletepri(TreeNode<T>* &node,T x);
-        int height(TreeNode<T>* node);
-        void SingRotateLeft(TreeNode<T>* &k2);
-        void SingRotateRight(TreeNode<T>* &k2);
-        void DoubleRotateLR(TreeNode<T>* &k3);
-        void DoubleRotateRL(TreeNode<T>* &k3);
+        int height(TreeNode<T>* node){
+#if 0
+            if(node!=NULL)
+                return node->hgt;
+            return -1;
+#endif
+            int l,r;
+            if(!node)
+                return 0;
+            l = height(node->ln) + 1;
+            r = height(node->rn) + 1;
+
+            return l>r?l:r;
+        }
+        void SingRotateLeft(TreeNode<T>* &k2, TreeNode<T>* &pk2){
+            TreeNode<T>* k1;
+            k1=k2->ln;
+            k2->ln=k1->rn;
+            k1->rn=k2;
+            if(root == k2){
+                root = k1;
+            }
+            if(pk2){
+                pk2->ln = k1;
+            }
+        }
+        void SingRotateRight(TreeNode<T>* &k2, TreeNode<T>* &pk2){
+            TreeNode<T>* k1;
+            k1=k2->rn;
+            k2->rn=k1->ln;
+            k1->ln=k2;
+            if(root == k2){
+                root = k1;
+            }
+            if(pk2){
+                pk2->rn = k1;
+            }
+        }
+        void DoubleRotateLR(TreeNode<T>* &k3, TreeNode<T>* &pk3){
+            SingRotateRight(k3->ln, pk3);
+            SingRotateLeft(k3, pk3);
+        }
+        void DoubleRotateRL(TreeNode<T>* &k3, TreeNode<T>* &pk3){
+            SingRotateLeft(k3->rn, pk3);
+            SingRotateRight(k3, pk3);
+        }
         //int Max(int cmpa,int cmpb);
+        std::string formatStr(int level, bool isFarLeft){
+            std::string str;
+            if(0 == level)
+                return str;
+
+            int cnt = 1<<(level-1);
+
+            if(isFarLeft)
+                cnt /= 2; 
+
+            for(int i=0; i<=cnt; i++){
+                str.append(" ");
+            }
+
+            return str;
+        }
+
+        void dumpTreeView(TreeNode<T>* root,int cur,int h,bool farleft,std::vector<std::string>& tv){
+            if(0 == h)
+                return;
+            int c = cur;
+            std::string str;
+            str = formatStr(h-cur, farleft);
+            if(root){
+                str.append(std::to_string(root->data));
+            }else{
+                if(cur != h)
+                    str.append("x");
+            }
+            tv.at(cur).append(str);
+            if(!root){
+                if(cur == h || cur+1 == h)
+                    return;
+                if(farleft)
+                    tv.at(cur+1).append("x x");
+                else
+                    tv.at(cur+1).append(" x x");
+                return;
+            }
+            dumpTreeView(root->ln, c+1, h, true&&farleft, tv);
+            dumpTreeView(root->rn, c+1, h, false&&farleft, tv);
+        }
 
     public:
         AVLTree():root(NULL){}
-        void insert(T x);
+        void insert(T x){
+            insertpri(root,NULL,x);
+        }
         //TreeNode<T>* find(T x);
         //void Delete(T x);
-        void traversal();
+        void traversal() {
+            dump_LDR(root);
+            std::cout << std::endl;
+        }
+        void dump_LDR(TreeNode<T>* root){
+            if(NULL == root)
+                return;
+            if(root->ln){
+                dump_LDR(root->ln);
+            }
+            std::cout << root->data << " ";
+            if(root->rn){
+                dump_LDR(root->rn);
+            }
+        }
+        void dumpTV(){
+            //init tv
+            std::vector<std::string> tv;
+            std::string s;
+            for(int i=0; i<=height(root); i++){
+                tv.push_back(s);
+            }
+
+            dumpTreeView(root, 0, height(root), true, tv);
+
+            for(int i=0; i<=height(root); i++)
+                std::cout << tv.at(i) << std::endl;
+
+            return;
+        }
+
 
 };
 #endif

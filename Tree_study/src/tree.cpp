@@ -206,6 +206,7 @@ node* delete_bst(node* root, int v){
    *
    */
 
+#if 0
 template<class T>
 int AVLTree<T>::height(TreeNode<T>* node)
 {
@@ -255,13 +256,6 @@ void AVLTree<T>::DoubleRotateRL(TreeNode<T>* &k3)
     SingRotateLeft(k3->rson);
     SingRotateRight(k3);
 }
-
-template<class T>
-void AVLTree<T>::insert(T x)
-{
-    insertpri(root,x);
-}
-
 template<class T>
 void AVLTree<T>::insertpri(TreeNode<T>* &node,T x)
 {
@@ -290,10 +284,4 @@ void AVLTree<T>::insertpri(TreeNode<T>* &node,T x)
                 DoubleRotateRL(node);
     }
 }
-
-template<class T>
-void AVLTree<T>::traversal()
-{
-    dump_LDR(root);
-}
-
+#endif
