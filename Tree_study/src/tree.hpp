@@ -89,11 +89,6 @@ class AVLTree
         //TreeNode<T>* findpri(TreeNode<T>* node,T x);
         //void Deletepri(TreeNode<T>* &node,T x);
         int height(TreeNode<T>* node){
-#if 0
-            if(node!=NULL)
-                return node->hgt;
-            return -1;
-#endif
             int l,r;
             if(!node)
                 return 0;
@@ -215,7 +210,6 @@ class AVLTree
 
             return;
         }
-
 
 };
 #endif

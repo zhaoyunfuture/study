@@ -29,9 +29,8 @@ int main(int argc, char* argv[])
     
     dumpTV(q); 
     
-    //int a = 1;
     AVLTree<int> avl;
-    for(int i=1; i<10; i++)
+    for(int i=10; i>0; i--)
         avl.insert(i);
     avl.traversal();
     avl.dumpTV();
