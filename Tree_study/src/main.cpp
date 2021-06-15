@@ -7,6 +7,7 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
+#if 0
     node* root = NULL;
     root = (node*) malloc(sizeof(node));
     root->val = 4;
@@ -36,8 +37,16 @@ int main(int argc, char* argv[])
     avl.dumpTV();
     cout << avl.find(3) << endl;
 
+    avl.printTree();
     avl.Delete(3);
     avl.dumpTV();
+
+    avl.printTree();
+#endif
+    bst rbt;
+    for(int i=10; i>0; i--)
+        rbt.insert(i);
+    rbt.printTree();
     return 0;
 }
 
