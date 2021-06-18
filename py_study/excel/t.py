@@ -1,4 +1,4 @@
-import sys
+import os, sys, getopt
 import xlrd
 import xlwt
 
@@ -30,4 +30,27 @@ if __name__ == '__main__':
         out_sheet.write(0,i,tmp)
     out.save('result.xls')
     pass
+
+ if __name__ == '__cli__':
+     print('Testing %s >>>\n' % __file__)
+     print "current working directory {}".format(os.getcwd())
+     opts, args = getopt.getopt(sys.argv[1:], 'i:o:h', ['input_path=', 'output_path=', 'help'])
+     print opts
+     print args
+     proto_path = ''
+     protoc= ''
+     for key, value in opts:
+         if key in ['-i', '--input_path']:
+             protoc = value
+         if key in ['-o', '--output_path']:
+             proto_path = value
+         if key in ['-h', '--help']:
+             print "please check below parameters"
+             print " --input_path/-i : input path"
+             print " --output_path/-o : output path"
+             sys.exit(0)
+     if input_path.strip() == '' or output_path.strip() == '':
+         print "parameter wrong"
+     else:
+         print "pass"
 
