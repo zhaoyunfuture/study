@@ -1,0 +1,8 @@
+git clone https://github.com/google/googletest
+cd googletest
+cmake CMakeLists.txt
+make
+sudo cp libgtest*.a  /usr/lib
+//sudo cp –a include/gtest /usr/include
+sudo ln -sf /home/jacob/work/tools/gtest/googletest/googletest/include/gtest gtest
+
