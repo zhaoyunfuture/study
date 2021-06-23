@@ -1,4 +1,4 @@
-1. svn download the opmock
+1> svn download the opmock
 https://sourceforge.net/p/opmock/code/HEAD/tree/
 2. do with opmock-code/trunk/opmock1/README.txt
  2.1 maven (change pom.xml 1.5->1.6)
@@ -8,10 +8,15 @@ https://sourceforge.net/p/opmock/code/HEAD/tree/
 3. update Makefile in opmock
 
 
-for swig and its depenence PCRE
+2> swig and its depenence PCRE
 1.first download SWIG tar from https://sourceforge.net/projects/swig/    
 2.first download PCRE TAR from https://ftp.pcre.org/pub/pcre/
 3.put the pcre.tar to parent location of swig like */swig-2.0.10/
 4.run ./Tools/pcre-build.sh
 5.run .configure under the */swig-2.0.10/
 6.make && make install
+
+3> gen the stub
+ actuallly we can directly use below shell to gen stub with parameter
+ opmock-code/trunk/opmock1/scripts/opmock.sh
+ ./opmock.sh --input-file "test.hpp" --output-path "./" --use-impl no --use-cpp yes
