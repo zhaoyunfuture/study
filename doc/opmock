@@ -6,3 +6,12 @@ https://sourceforge.net/p/opmock/code/HEAD/tree/
  2.2 swig
    update opmock.sh swig path
 3. update Makefile in opmock
+
+
+for swig and its depenence PCRE
+1.first download SWIG tar from https://sourceforge.net/projects/swig/    
+2.first download PCRE TAR from https://ftp.pcre.org/pub/pcre/
+3.put the pcre.tar to parent location of swig like */swig-2.0.10/
+4.run ./Tools/pcre-build.sh
+5.run .configure under the */swig-2.0.10/
+6.make && make install

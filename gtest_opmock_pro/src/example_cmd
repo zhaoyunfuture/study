@@ -1,0 +1,1 @@
+./opmock.sh --input-file "test.hpp" --output-path "./" --use-impl no --use-cpp yes

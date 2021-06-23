@@ -1,23 +1,18 @@
 #include<gtest/gtest.h>
 #include<map>
 #include<iostream>
+
+#include "test.hpp"
 using namespace std;
-class Student{
-public:
-    Student(){
-        age=0;
-    }
-    Student(int a){
-        age=a;
-    }
-    void print(){
-    cout<<"*********** "<<age<<" **********"<<endl;;
-        }  
-private:
-    int age;
-};
 
 static Student *s;
+
+void Student::setAge(int a){
+    age = a;
+}
+void Student::print(){
+    cout<<"*********** "<<age<<" **********"<<endl;;
+}
 //在第一个test之前，最后一个test之后调用SetUpTestCase()和TearDownTestCase()
 class TestMap:public testing::Test
 {
