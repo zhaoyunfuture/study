@@ -1,0 +1,38 @@
+CC := g++
+FPIC = -fPIC -c
+CFLAGS  += -g -I./export  -Wall -fexceptions -std=c++11
+
+LIB_NAME = libtest.so
+BINARY_PATH ?= out_lib
+OBJECT_PATH ?= out_lib/objs
+TARGET ?= $(BINARY_PATH)/$(LIB_NAME)
+WHERE = $(shell pwd)
+SOURCES := $(wildcard ./libsrc/*.cpp)
+OBJECTS := $(addsuffix .o,$(addprefix $(OBJECT_PATH)/,$(basename $(notdir $(SOURCES)))))
+ 
+ 
+.PHONY :prepare all clean install
+ 
+all: prepare $(TARGET) install
+
+prepare: $(BINARY_PATH) $(OBJECT_PATH)
+$(BINARY_PATH) $(OBJECT_PATH): ; mkdir -p $@
+
+clean: 
+	rm -rf out_lib
+
+$(TARGET) : $(OBJECTS)
+	$(hide) $(CC)  -shared -fPIC -o $@ $(OBJECTS) 
+
+install : $(TARGET)
+	@echo $(WHERE)
+	sudo cp $(WHERE)/$(TARGET) /usr/local/lib/
+define make-cmd-cc
+$2 : $1
+	$$(CC) -fPIC -c -o $$@ $$<
+endef
+
+$(foreach afile,$(SOURCES),\
+	$(eval $(call make-cmd-cc,$(afile),\
+	$(addsuffix .o,$(addprefix $(OBJECT_PATH)/,$(basename $(notdir $(afile))))))))
+
