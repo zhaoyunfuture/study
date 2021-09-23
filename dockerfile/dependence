@@ -1,0 +1,17 @@
+
+git clone https://github.com/kunpengcompute/zstd
+
+git clone https://github.com/akheron/jansson.git
+autoreconf -i
+./configure
+make
+make install
+
+
+dmalloc:
+https://dmalloc.com/releases/
+tar zxvf dmalloc-5.5.2.tgz
+cd dmalloc-5.5.2
+./configure
+make
+make install
