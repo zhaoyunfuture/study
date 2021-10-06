@@ -29,3 +29,14 @@
     git config --global http://135.245.48.34:8000
     git config --global https://135.245.48.34:8000
     git config --global credential.helper store
+
+//install doxygen
+1. sudo apt-get install doxygen
+2. sudo apt-get install graphviz // for PNG picture
+3. doxygen -g  //to generat doxyfile
+
+//pip not work
+1. sudo apt-get remove python-pipe
+2. wget https://bootstrap.pypa.io/3.5/get-pip.py
+3. python get-pip.py
+4. pip list  // for check
