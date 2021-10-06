@@ -40,3 +40,6 @@
 2. wget https://bootstrap.pypa.io/3.5/get-pip.py
 3. python get-pip.py
 4. pip list  // for check
+
+code line counter:
+ https://github.com/AlDanial/cloc
